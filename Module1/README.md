@@ -22,7 +22,7 @@
 
 - M1.5 Tensorflow Keras API on Google Colab
     - [Video] [Introduction to Deep Learning](https://pythonprogramming.net/introduction-deep-learning-python-tensorflow-keras/) (20min)
-    - [Hands-on-Labs] [Lab1_Keras](https://github.com/jonghkim/financial-time-series-prediction/blob/master/Module1/M1.5%20Lab1_Keras.pdf) [[Code](https://colab.research.google.com/drive/1U81gAePnC0oX9iq13dCzl-KOcJC3TcP5)]]
+    - [Hands-on-Labs] [Lab1_Keras](https://github.com/jonghkim/financial-time-series-prediction/blob/master/Module1/M1.5%20Lab1_Keras.pdf) [[Code](https://colab.research.google.com/drive/1U81gAePnC0oX9iq13dCzl-KOcJC3TcP5)]
 
 - M1.6 [Assignments](https://docs.google.com/forms/d/e/1FAIpQLScccRwE4-4krpGQ1ZfCzIMCGA0AjgoBV3JHt4ZCO39eLvJlgg/viewform)
 
