@@ -5,13 +5,6 @@
 ## Goal
 - Learn how to implement FNN, CNN, RNN models using Tensorflow Keras API on Google Colab 
 
-## Datasets
-- This session use three datasets:
-    - Dogs vs Cats dataset from Microsoft [[Download](https://drive.google.com/open?id=1BKr22YQKb-AcsgBOJQevQOCLpgyWMFZe)] (For simplicity, we only use 3000 images for each animal)
-    - Public dataset: Prices of multiple crypotocurrecies from pythonprogramming.net [[Download](https://drive.google.com/open?id=1thjGhgnAm5k1zuSiWhGmlUJzBXM3IECi)]
-    - Self Crawled dataset: Prices and orderbook data of multiple crypotocurrecies from CoinOne [[Downloadable on Request](mailto:quantic.jh@gmail.com?subject=[GitHub]%20CoinOne%20Data%20Requests)]
-    
-
 ## Modules
 - M2.1 Convolutional Neural Networks
     - [Video] [Loading in Your Own Data](https://pythonprogramming.net/loading-custom-data-deep-learning-python-tensorflow-keras/) (18min)
