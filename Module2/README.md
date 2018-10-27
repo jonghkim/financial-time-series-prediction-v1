@@ -1,0 +1,46 @@
+# Module2. Learning Tensorflow Keras API
+
+*Will be released after Module1*
+
+## Goal
+- Learn how to implement FNN, CNN, RNN models using Tensorflow Keras API on Google Colab 
+
+## Datasets
+- This session use three datasets:
+    - Dogs vs Cats dataset from Microsoft [[Download](https://drive.google.com/open?id=1BKr22YQKb-AcsgBOJQevQOCLpgyWMFZe)] (For simplicity, we only use 3000 images for each animal)
+    - Public dataset: Prices of multiple crypotocurrecies from pythonprogramming.net [[Download](https://drive.google.com/open?id=1thjGhgnAm5k1zuSiWhGmlUJzBXM3IECi)]
+    - Self Crawled dataset: Prices and orderbook data of multiple crypotocurrecies from CoinOne [[Downloadable on Request](mailto:quantic.jh@gmail.com?subject=[GitHub]%20CoinOne%20Data%20Requests)]
+    
+
+## Modules
+- M2.1 Convolutional Neural Networks
+    - [Video] [Loading in Your Own Data](https://pythonprogramming.net/loading-custom-data-deep-learning-python-tensorflow-keras/) (18min)
+    - [Video] [Convolutional Neural Networks](https://pythonprogramming.net/convolutional-neural-network-deep-learning-python-tensorflow-keras/) (18min)
+    - [Hands-on-Labs] [Convolutional Neural Networks](https://drive.google.com/open?id=1NwhuSstEnyVsFlwBVRoP_OY-b4M5Wu9p) [[Code](https://colab.research.google.com/drive/1qKSNVWgBkqi7S4KL-pTnbBawmv7hT2fP)] [[Data](https://drive.google.com/open?id=1BKr22YQKb-AcsgBOJQevQOCLpgyWMFZe)]
+    - [Assignment] [1D Convolution for Time Series Prediction]()
+
+- M2.2 Tensorboard on Google Colab
+    - [Video] [Analyzing Models with TensorBoard](https://pythonprogramming.net/loading-custom-data-deep-learning-python-tensorflow-keras/) (16min)
+    - [Video] [Optimizing Models with TensorBoard](https://pythonprogramming.net/tensorboard-optimizing-models-deep-learning-python-tensorflow-keras/) (27min)
+    - [Hands-on-Labs] [Tensorboard on Google Colab](https://drive.google.com/open?id=10bA1Jm8IMQa9apUfVCJRojhQqNjYLFzm) [[Code](https://colab.research.google.com/drive/1a4FunGwLD3uV3q2lI8fAihBZ9LYWGGfU)]
+
+- M2.3 Save and Load on Google Colab
+    - [Video] [How to Use Your Trained Model](https://pythonprogramming.net/using-trained-model-deep-learning-python-tensorflow-keras/) (11min)
+    - [Hands-on-Labs] [Save and Load Model on Google Colab](https://drive.google.com/open?id=1muLG88n3NdHi53El7Jg1sjtL0Zj9Vfi7) [[Code](https://colab.research.google.com/drive/1x4EgYUnFvJicga8AllR1QjT8QP3lXocE)]
+
+- M2.4 Recurrent Neural Networks
+    - [Video] [Recurrent Neural Networks](https://pythonprogramming.net/recurrent-neural-network-deep-learning-python-tensorflow-keras/) (21min)
+    - [Hands-on-Labs] [Recurrent Neural Networks]() [[Code]()] [[Data](https://drive.google.com/open?id=1thjGhgnAm5k1zuSiWhGmlUJzBXM3IECi)]
+    - [Assignment] [RNN for Time Series Prediction]()
+
+- M2.5 Preprocessing for Cryptocurrency Data
+    - [Video] [Creating a Cryptocurrency-Predicting Finance Recurrent Neural Network](https://pythonprogramming.net/cryptocurrency-recurrent-neural-network-deep-learning-python-tensorflow-keras/) (21min)
+    - [Video] [Normalizing and Creating Sequences for Our Cryptocurrency Predicting RNN](https://pythonprogramming.net/normalizing-sequences-deep-learning-python-tensorflow-keras/) (19min)
+    - [Hands-on-Labs] [Preprocessing for Crypotocurrency Data]()
+
+- M2.6 Assignments
+
+- M2.7 Slack Discussion
+
+## References
+- [KAIST Summer Session 2018](https://sites.google.com/view/kaist-mis-session2018), 2018
