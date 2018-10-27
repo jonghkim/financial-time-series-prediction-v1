@@ -10,7 +10,7 @@
     - [Video] [Loading in Your Own Data](https://pythonprogramming.net/loading-custom-data-deep-learning-python-tensorflow-keras/) (18min)
     - [Video] [Convolutional Neural Networks](https://pythonprogramming.net/convolutional-neural-network-deep-learning-python-tensorflow-keras/) (18min)
     - [Hands-on-Labs] [Convolutional Neural Networks](https://drive.google.com/open?id=1NwhuSstEnyVsFlwBVRoP_OY-b4M5Wu9p) [[Code](https://colab.research.google.com/drive/1qKSNVWgBkqi7S4KL-pTnbBawmv7hT2fP)] [[Data](https://drive.google.com/open?id=1BKr22YQKb-AcsgBOJQevQOCLpgyWMFZe)]
-    - [Assignment] Simple 1D Convolution for Time Series Prediction [Problem](https://colab.research.google.com/drive/14i30E5sGUYBPHJ-RASMrq_31r_BqG_Ed) [Solution](https://colab.research.google.com/drive/1ERGlczEPj1rnBhg_WYOWvFOvvGEra-52)
+    - [Assignment] Simple 1D Convolution for Time Series Prediction [[Problem](https://colab.research.google.com/drive/14i30E5sGUYBPHJ-RASMrq_31r_BqG_Ed)] [[Solution](https://colab.research.google.com/drive/1ERGlczEPj1rnBhg_WYOWvFOvvGEra-52)]
 
 - M2.2 Tensorboard on Google Colab
     - [Video] [Analyzing Models with TensorBoard](https://pythonprogramming.net/loading-custom-data-deep-learning-python-tensorflow-keras/) (16min)
@@ -24,7 +24,7 @@
 - M2.4 Recurrent Neural Networks
     - [Video] [Recurrent Neural Networks](https://pythonprogramming.net/recurrent-neural-network-deep-learning-python-tensorflow-keras/) (21min)
     - [Hands-on-Labs] [Recurrent Neural Networks]() [[Code]()] [[Data](https://drive.google.com/open?id=1thjGhgnAm5k1zuSiWhGmlUJzBXM3IECi)]
-    - [Assignment] Simple RNN for Time Series Prediction [Problem](https://colab.research.google.com/drive/1Nn1kGB33C_UHIpdm39wnG6yBVGstFuPa) [Solution](https://colab.research.google.com/drive/16X9M0HuP9vTczIPv9Mg8iISYBCyxW9Xg)
+    - [Assignment] Simple RNN for Time Series Prediction [[Problem](https://colab.research.google.com/drive/1Nn1kGB33C_UHIpdm39wnG6yBVGstFuPa)] [[Solution](https://colab.research.google.com/drive/16X9M0HuP9vTczIPv9Mg8iISYBCyxW9Xg)]
 
 - M2.5 Preprocessing for Cryptocurrency Data
     - [Video] [Creating a Cryptocurrency-Predicting Finance Recurrent Neural Network](https://pythonprogramming.net/cryptocurrency-recurrent-neural-network-deep-learning-python-tensorflow-keras/) (21min)
