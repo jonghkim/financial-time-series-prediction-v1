@@ -123,7 +123,7 @@
     
     아래의 자료의 그림 "Graphical illustration of bias and variance" 을 보시면, Low Bias에 대한 이해가 분명해 지실 것 같습니다.
     
-    ![bias_vs_variance](Q&A/bias_vs_variance.png)
+![bias_vs_variance](Q&A/bias_vs_variance.png)
 
     (http://scott.fortmann-roe.com/docs/BiasVariance.html)
 
