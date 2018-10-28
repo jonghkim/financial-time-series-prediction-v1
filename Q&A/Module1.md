@@ -137,9 +137,28 @@
 
 
 ## Module1.2 Tensorflow Keras API on Google Colab
-#### Question1. 모델 만드는 법에 대해서 더 배우고 싶어요. 있는 코드 따라하는거야 문제 없는데 새로운 모델을 만들라고 하면 코드를 전혀 생각해 낼수 없을것 같습니다. (Work-in-Progress)
+#### Question1. 모델 만드는 법에 대해서 더 배우고 싶어요. 있는 코드 따라하는거야 문제 없는데 새로운 모델을 만들라고 하면 코드를 전혀 생각해 낼수 없을것 같습니다.
 
-#### Question2. 은닉 레이어의 출력 값이 정해지는 기준( (tf.keras.layers.Dense(128, activation=tf.nn.relu) ) 시에 128이 정해지는 기준  ,  영상에서 레이어 한개는 뉴럴 네트워크 두개이상 딥 뉴럴 네트워크라고 설명을 했는데 같은값으로 은닉 레이어를 두개 만들었는데( model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu))  model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu)) ) 이렇게 할 시 한 개와 어떤 차이점이 있는지. (Work-in-Progress)
+    큰 Process (Data Preprocessing -> Model Build -> Model Compile -> Model Train -> Prediction) 를 항상 기억하시고,
+    예제 문제들에 대해 Solution을 바로 보기 보다는 어렵지만 먼저 풀어보시는 시도를 하시면 도움이 많이 되는 것 같습니다.
 
+    예제 문제를 가급적 많이 만들어보고 싶지만, 한달의 시간이 생각보다 더 Tight 한 것 같습니다. 이와 관련하여서는 직접 연습해 보실 수 있는 자료를 따로 정리하여 공유드리겠습니다.
+    
+#### Question2. 은닉 레이어의 출력 값이 정해지는 기준( (tf.keras.layers.Dense(128, activation=tf.nn.relu) ) 시에 128이 정해지는 기준,  영상에서 레이어 한개는 뉴럴 네트워크 두개이상 딥 뉴럴 네트워크라고 설명을 했는데 같은값으로 은닉 레이어를 두개 만들었는데( model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu))  model.add(tf.keras.layers.Dense(128, activation=tf.nn.relu)) ) 이렇게 할 시 한 개와 어떤 차이점이 있는지. Overfitting과 레이어 갯수의 결정 사이에 대한 연관성.
 
-#### Question3. Overfitting과 레이어 갯수의 결정 사이에 대한 연관성 (Work-in-Progress)
+    레이어 수와 크기 설정의 문제에 있어서 사용할 아키텍처를 어떻게 결정할까요?
+    Hidden Layer를 쓰는게 좋을지, 하나의 Hidden Layer를 쓸지, 두 개의 Hidden Layer를 쓸지, 각 층은 얼마나 커야하는지에 대한 고민이 있을 수 있습니다.
+    
+    간략히 답을 드리자면, 첫째로, 신경망의 크기와 수를 증가 시키면 네트워크의 표현력(Capacity)이 증가한다는 점에 유의하시면 됩니다.
+    즉, 뉴런이 많을 수록 표현 가능한 공간이 커집니다.
+
+    예를 들어, 2차원에서 아래와 같은 2진 분류 문제가 있다고 가정하면, 아래 3개의 신경망(모두 하나의 층만 있음)은 Node의 개수를 달리 했을 때의 결과를 보여 줍니다.
+
+![layer_sizes](layer_sizes.jpeg)
+
+    위의 다이어그램에서 뉴런이 더 많은 네트워크는 더 복잡한 기능을 표현할 수 있지만, 이 결과는 blessing과 (더 복잡한 데이터를 분류하는 것을 배울 수 있기 때문에)과 Curse입니다 (훈련 데이터를 Overfitting 하기 쉽기 때문에). 
+    복잡한 모형보다, 3개의 hidden neuron을 가진 모델이 전체 데이터를 큰 두가지 모양으로 구분하고 나머지 점들은 noise로 해석하는데, 더 나은 일반화를 한 모델일 수 있습니다.
+
+    추가적으로, 128이라는 숫자는 사실 Convention에 가까운 것 같습니다. 직접 테스트 해보지는 못 했지만, 32의 배수가 GPU가 메모리에서 다루기가 편하며, 속도적인 이점이 있다고도 합니다.
+
+    참고: http://cs231n.github.io/neural-networks-1/
