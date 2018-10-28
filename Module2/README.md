@@ -23,13 +23,13 @@
 
 - M2.4 Recurrent Neural Networks
     - [Video] [Recurrent Neural Networks](https://pythonprogramming.net/recurrent-neural-network-deep-learning-python-tensorflow-keras/) (21min)
-    - [Hands-on-Labs] [Recurrent Neural Networks]() [[Code]()] [[Data](https://drive.google.com/open?id=1thjGhgnAm5k1zuSiWhGmlUJzBXM3IECi)]
+    - [Hands-on-Labs] [Recurrent Neural Networks](https://drive.google.com/open?id=1AxwEKR8F0Gq6sTuxhZ8uLFn40Ri9q4Db) [[Code](https://colab.research.google.com/drive/1RH5tnTrTPRZkWfNj7PAuPaM_E55coxwp)]
     - [Assignment] Simple RNN for Time Series Prediction [[Problem](https://colab.research.google.com/drive/1Nn1kGB33C_UHIpdm39wnG6yBVGstFuPa)] [[Solution](https://colab.research.google.com/drive/16X9M0HuP9vTczIPv9Mg8iISYBCyxW9Xg)]
 
 - M2.5 Preprocessing for Cryptocurrency Data
     - [Video] [Creating a Cryptocurrency-Predicting Finance Recurrent Neural Network](https://pythonprogramming.net/cryptocurrency-recurrent-neural-network-deep-learning-python-tensorflow-keras/) (21min)
     - [Video] [Normalizing and Creating Sequences for Our Cryptocurrency Predicting RNN](https://pythonprogramming.net/normalizing-sequences-deep-learning-python-tensorflow-keras/) (19min)
-    - [Hands-on-Labs] [Preprocessing for Crypotocurrency Data]()
+    - [Hands-on-Labs] [Preprocessing for Crypotocurrency Data]() [[Code]()] [[Data](https://drive.google.com/open?id=1thjGhgnAm5k1zuSiWhGmlUJzBXM3IECi)]
 
 - M2.6 Assignments
 
