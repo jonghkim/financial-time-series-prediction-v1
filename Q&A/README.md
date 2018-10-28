@@ -113,7 +113,7 @@
 
 #### Question. hyper parameter 최적화를 위한 설정 (Work-in-Progress)
 
-#### Question. Keras와 Google Coolab을 사용하는데 가장 적절한 파이썬 버전은 무엇인가요? (Work-in-Progress)
+#### Question. Keras와 Google Colab을 사용하는데 가장 적절한 파이썬 버전은 무엇인가요? (Work-in-Progress)
 
 #### Question. AI로 뭔가를 학습 시킬 때 전처리를 할텐데 이런 타임시리즈의 데이타는 어떤식으로 전처리를 하나요? 이동평균선?, 볼린져밴드 등 사용하나요? (Work-in-Progress)
 
