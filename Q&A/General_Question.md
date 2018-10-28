@@ -1,5 +1,5 @@
 # General Q&A
-#### Question. Test, Train Set의 할당에 황금(?) 비율이 있는지요? 그리고 예를 들어 data가 충분하지 않을때 Train에 많이 할당하면 좋을텐데, 이런 경우를 위해서 할당량을 조절할 방법이 있나요?
+#### Question1. Test, Train Set의 할당에 황금(?) 비율이 있는지요? 그리고 예를 들어 data가 충분하지 않을때 Train에 많이 할당하면 좋을텐데, 이런 경우를 위해서 할당량을 조절할 방법이 있나요?
 
     train / test split의 목적은 generalization error 를 최소화 하기 위함인데, 둘 사이의 샘플 개수 결정은 경쟁 관계에 있습니다. 
     만약 train 사이즈가 작으면 paramter estimate의 variance 가 높고, 반대로 test 사이즈가 작으면 performace statistic의 variance가 높아집니다. 
@@ -18,7 +18,7 @@
     https://pdfs.semanticscholar.org/452e/6c05d46e061290fefff8b46d0ff161998677.pdf
 
 
-#### Question. data을 scaling하고 train 하는 이유가 있을것 같아서 문의드립니다.  어떤 모델에서든 항상 0~1값으로 변경해야하는것인지?
+#### Question2. data을 scaling하고 train 하는 이유가 있을것 같아서 문의드립니다.  어떤 모델에서든 항상 0~1값으로 변경해야하는것인지?
 
     이론적인 면에서는 Normalize는 Neural Network의 Weight, Bias가 조정되는 것으로 모두 잡힐 수 있어야 하지만, Practical 하게는 
         1. training more stable and faster 
@@ -46,7 +46,7 @@
     가량 Exact Boundary가 있는 문제의 경우에는 Standardization이 적절하지 않을 수도 있고, 
     min-max scaling은 long tail 분포가 있는 문제에 대해서는 적절하지 않을 수 있습니다. 
 
-#### Question. 텐서플로우에서 모델 저장하면 checkpoint 파일등 여러개가 만들어지잖아요. 케라스에서는 .h 파일 하나만 생기는겁니까? 혹시 텐서플로우의 .pb 파일에 대응하는 건가요?
+#### Question3. 텐서플로우에서 모델 저장하면 checkpoint 파일등 여러개가 만들어지잖아요. 케라스에서는 .h 파일 하나만 생기는겁니까? 혹시 텐서플로우의 .pb 파일에 대응하는 건가요?
 
     Checkpointing 기능은 긴 시간 (days, weeks) 동안의 학습시, train과정에 문제가 있더라도 모든 학습 정보를 잃지 않도록하는데 필수적인 기능이여서, 장기적으로는 꼭 배워둘 필요가 있는 것 같습니다. 
 
@@ -60,7 +60,7 @@
     자세한 checkpoint 저장 방법은 아래의 튜토리얼을 참조해 주세요. 
     https://colab.research.google.com/github/tensorflow/models/blob/master/samples/core/tutorials/keras/save_and_restore_models.ipynb#scrollTo=2S4xrNJRilwi
 
-#### Question. keras에서 Build Model부분이 마치 black box 같아 보입니다. 모델 학습에도 변수들의 변화되는 과정을 print 해볼만한 방법이 있을까요? 
+#### Question4. keras에서 Build Model부분이 마치 black box 같아 보입니다. 모델 학습에도 변수들의 변화되는 과정을 print 해볼만한 방법이 있을까요? 
 
     neural net의 디버깅은 원인이 너무나 다양할 수 있어서 (exploding gradients, dead relu, vanishing gradient etc) 항상 쉬운 일이 아닌것 같습니다. 
     저는 주로 model compile 이후에 "model.summary()" 를 통해 전체 shape 구조를 보거나, keras model의 특정 layer를 취득하여 해당 layer의 결과를 확인할 수 있는 function을 만들어 사용합니다. 
@@ -71,13 +71,13 @@
     추가적으로 neural network 모델의 일반적인 디버깅 방식은 아래의 링크를 참조해 주시면 좋을 것 같습니다.
     https://medium.com/machine-learning-world/how-to-debug-neural-networks-manual-dc2a200f10f2
 
-#### Question. Colab에서 with tf.device('/gpu:0') 아래에 인덴트해서 넣으면 CPU가 아닌 GPU로 돌아가는 게 맞는지요? 
+#### Question5. Colab에서 with tf.device('/gpu:0') 아래에 인덴트해서 넣으면 CPU가 아닌 GPU로 돌아가는 게 맞는지요? 
 
     안녕하세요 :slightly_smiling_face: 좋은 질문 주셔서 감사합니다. 상단 메뉴의 런타임에서 런타임 유형을 꼭 GPU로 바꿔주셔야 GPU가 작동됩니다. 
     아래 링크에서 참조해 보시면, GPU 설정 이전에는 with tf.device('/gpu:0)을 설정하더라도, 
     GPU 장치가 관측되지 않습니다. (https://colab.research.google.com/notebooks/gpu.ipynb#scrollTo=t9ALbbpmY9rm)
 
-#### Question. 딥러닝에서 레이어를 몇개로 하며 또 각 레이어마다 차원을 몇개로 해야하는지는 어떻게 정하는 겁니까?
+#### Question6. 딥러닝에서 레이어를 몇개로 하며 또 각 레이어마다 차원을 몇개로 해야하는지는 어떻게 정하는 겁니까?
 
     안녕하세요. 좋은 질문 주셔서 감사합니다. 딥러닝에서 레이어의 개수 혹은 차원의 개수에 대한 결정은 Overfitting Issues와 큰 관련이 있습니다. 
     Overfitting은 1. 모델이 너무 복잡하거나 2. 데이터가 너무 적거나 하는 문제로 인해서 발생할 수 있습니다.
@@ -100,7 +100,7 @@
     Cross Validation에 대한 설명은 아래 링크를 참조해 보시면 좋을것 같습니다. (https://www.youtube.com/watch?v=TIgfjmp-4BA)
     모델이 복잡할때 생길 수 있는 이슈에 대한 예제는 아래의 링크를 참조해 보시면 됩니다. (https://towardsdatascience.com/beginners-ask-how-many-hidden-layers-neurons-to-use-in-artificial-neural-networks-51466afa0d3e)
 
-#### Question. !pip install -q matplotlib-venn 이 뭐하는건지는 알겠는데, -q는 뭘까요?
+#### Question7. !pip install -q matplotlib-venn 이 뭐하는건지는 알겠는데, -q는 뭘까요?
 
     아래 링크에 따르면, -q는 설치 과정에 나타나는 메세지를 줄여주는 역할을 합니다.
 
@@ -111,15 +111,15 @@
 
     https://media.readthedocs.org/pdf/pip/latest/pip.pdf
 
-#### Question. hyper parameter 최적화를 위한 설정
+#### Question8. hyper parameter 최적화를 위한 설정
 
     해당 방법은 Module3에서 관련하여 보다 자세히 다룰 예정입니다. (Learning Curves, Batch Normalization, Dropout and Regularization, Continuous Learning, Hyperparameter Search)
 
-#### Question. Keras와 Google Colab을 사용하는데 가장 적절한 파이썬 버전은 무엇인가요?
+#### Question9. Keras와 Google Colab을 사용하는데 가장 적절한 파이썬 버전은 무엇인가요?
 
     이 부분은 선호의 문제일 수 있을 것 같습니다. 저는 Python2를 주로 쓰고있지만 (legacy code), 가능하면 Python3를 쓰고 싶습니다.
 
-#### Question. AI로 뭔가를 학습 시킬 때 전처리를 할텐데 이런 타임시리즈의 데이타는 어떤식으로 전처리를 하나요? 이동평균선?, 볼린져밴드 등 사용하나요? (Work-in-Progress)
+#### Question10. AI로 뭔가를 학습 시킬 때 전처리를 할텐데 이런 타임시리즈의 데이타는 어떤식으로 전처리를 하나요? 이동평균선?, 볼린져밴드 등 사용하나요? (Work-in-Progress)
 
     좋은 질문 입니다. 얘기 주신 방법 (MA, 볼린저벤드)은 주로 Trend와 Cycle을 구분하기 위한 방법으로 보입니다. 
     사실 두가지 방법에 대한 Practical하게 다루는 곳은 많이 봤지만, 학문적인 Support를 주로 보지는 못 한것 같습니다.
