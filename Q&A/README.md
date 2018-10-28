@@ -100,7 +100,7 @@
     Cross Validation에 대한 설명은 아래 링크를 참조해 보시면 좋을것 같습니다. (https://www.youtube.com/watch?v=TIgfjmp-4BA)
     모델이 복잡할때 생길 수 있는 이슈에 대한 예제는 아래의 링크를 참조해 보시면 됩니다. (https://towardsdatascience.com/beginners-ask-how-many-hidden-layers-neurons-to-use-in-artificial-neural-networks-51466afa0d3e)
 
-#### !pip install -q matplotlib-venn 이 뭐하는건지는 알겠는데, -q는 뭘까요?
+#### Question. !pip install -q matplotlib-venn 이 뭐하는건지는 알겠는데, -q는 뭘까요?
 
     아래 링크에 따르면, -q는 설치 과정에 나타나는 메세지를 줄여주는 역할을 합니다.
 
@@ -111,9 +111,9 @@
 
     https://media.readthedocs.org/pdf/pip/latest/pip.pdf
 
-#### hyper parameter 최적화를 위한 설정 (Work-in-Progress)
+#### Question. hyper parameter 최적화를 위한 설정 (Work-in-Progress)
 
-#### Keras와 Google Coolab을 사용하는데 가장 적절한 파이썬 버전은 무엇인가요? (Work-in-Progress)
+#### Question. Keras와 Google Coolab을 사용하는데 가장 적절한 파이썬 버전은 무엇인가요? (Work-in-Progress)
 
-#### AI로 뭔가를 학습 시킬 때 전처리를 할텐데 이런 타임시리즈의 데이타는 어떤식으로 전처리를 하나요? 이동평균선?, 볼린져밴드 등 사용하나요? (Work-in-Progress)
+#### Question. AI로 뭔가를 학습 시킬 때 전처리를 할텐데 이런 타임시리즈의 데이타는 어떤식으로 전처리를 하나요? 이동평균선?, 볼린져밴드 등 사용하나요? (Work-in-Progress)
 
