@@ -102,7 +102,15 @@
         - Causual Inference는 Unbiased estimates를 목표로 합니다.
         - 이를 검증하기 위해서, 연구 대상 A가 factor X에 영향을 받았을 때와 받지 않았을 때의 차이를 보고 싶은데,
         - Observational Data (실험이 아닌)에 기반하면 사실은 연구 대상 A가 factor X에 영향을 받았을 때와,
-        - X에 노출 된적 없었던 그룹 B가 factor X에 영향을 받지 않았을 때의 차이를 보게 됩니다.
+        - X에 노출 된적 없었던 그룹 연구 대상 B가 factor X에 영향을 받지 않았을 때의 차이를 보게 됩니다.
+        - 완전히 동일한 연구 대상에 2개의 다른 Treatment를 가할 수가 없습니다.
+            - A -> Treatment -> A'
+            - Note. we can not observe (A -> No Treatment -> A'') (시간이 지나면서 A도 Treatmnet가 아닌 다른 무언가에 영향을 받음)            
+            - What we want to see: factor x => (A'-A'')
+
+            - However, what we actually compare
+            - B -> No Treatment -> B'(?) (시간이 지나면서 B도 뭔가 바뀜)
+            - Then, we observe factor x => (A'-B') - (A-B)
 
     4. 9 page
         - Prediction은 Out of sample에서의 High Predictive Power를 목표로 합니다.
