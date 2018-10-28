@@ -29,7 +29,7 @@
 - M2.5 Preprocessing for Cryptocurrency Data
     - [Video] [Creating a Cryptocurrency-Predicting Finance Recurrent Neural Network](https://pythonprogramming.net/cryptocurrency-recurrent-neural-network-deep-learning-python-tensorflow-keras/) (21min)
     - [Video] [Normalizing and Creating Sequences for Our Cryptocurrency Predicting RNN](https://pythonprogramming.net/normalizing-sequences-deep-learning-python-tensorflow-keras/) (19min)
-    - [Hands-on-Labs] [Preprocessing for Crypotocurrency Data]() [[Code]()] [[Data](https://drive.google.com/open?id=1thjGhgnAm5k1zuSiWhGmlUJzBXM3IECi)]
+    - [Hands-on-Labs] [Preprocessing for Crypotocurrency Data](https://drive.google.com/open?id=1WQnUEAnE4NpD4h_ghE8oRXDHIAe0ZlSY) [[Code](https://colab.research.google.com/drive/1NEUvY8uKCaoht45hPQV_qOps7ZROw1l6)] [[Data](https://drive.google.com/open?id=1thjGhgnAm5k1zuSiWhGmlUJzBXM3IECi)]
 
 - M2.6 Assignments
 
