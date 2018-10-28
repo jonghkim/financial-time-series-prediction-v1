@@ -29,8 +29,8 @@ This is a repository for the [[STUDYPIE] Predicting Financial Time Series using 
     - Self Crawled dataset: Prices and orderbook data of multiple crypotocurrecies from CoinOne [[Downloadable on Request](mailto:quantic.jh@gmail.com?subject=[GitHub]%20CoinOne%20Data%20Requests)] 
 
 ## Q&A
-    - [General Machine Learning Questions](Q&A/General_Question.md)
-    - Module 1. [Getting Started + Google Colab Setting](Q&A/Module1.md)
-    - Module 2. [Learning Tensorflow Keras API]()
-    - Module 3. [Implementing Time Series Prediction Models]()
-    - Module 4. [Implementing Time Series Prediction Models (More Comprehensive)]()
+- [General Machine Learning Questions](Q&A/General_Question.md)
+- Module 1. [Getting Started + Google Colab Setting](Q&A/Module1.md)
+- Module 2. [Learning Tensorflow Keras API]()
+- Module 3. [Implementing Time Series Prediction Models]()
+- Module 4. [Implementing Time Series Prediction Models (More Comprehensive)]()
