@@ -27,3 +27,10 @@ This is a repository for the [[STUDYPIE] Predicting Financial Time Series using 
     - Dogs vs Cats dataset from Microsoft [[Download](https://drive.google.com/open?id=1BKr22YQKb-AcsgBOJQevQOCLpgyWMFZe)] (For simplicity, we only use 300 images for each animal)
     - Public dataset: Prices of multiple crypotocurrecies from pythonprogramming.net [[Download](https://drive.google.com/open?id=1thjGhgnAm5k1zuSiWhGmlUJzBXM3IECi)]
     - Self Crawled dataset: Prices and orderbook data of multiple crypotocurrecies from CoinOne [[Downloadable on Request](mailto:quantic.jh@gmail.com?subject=[GitHub]%20CoinOne%20Data%20Requests)] 
+
+## Q&A
+    - [General Machine Learning Questions](Q&A/General_Question.md)
+    - Module 1. [Getting Started + Google Colab Setting](Q&A/Module1.md)
+    - Module 2. [Learning Tensorflow Keras API]()
+    - Module 3. [Implementing Time Series Prediction Models]()
+    - Module 4. [Implementing Time Series Prediction Models (More Comprehensive)]()
