@@ -122,10 +122,19 @@
 #### Question. AI로 뭔가를 학습 시킬 때 전처리를 할텐데 이런 타임시리즈의 데이타는 어떤식으로 전처리를 하나요? 이동평균선?, 볼린져밴드 등 사용하나요? (Work-in-Progress)
 
     좋은 질문 입니다. 얘기 주신 방법 (MA, 볼린저벤드)은 주로 Trend와 Cycle을 구분하기 위한 방법으로 보입니다. 
-    사실 두가지 방법에 대한 학문적인 Support를 주로 보지는 못 했지만, 
+    사실 두가지 방법에 대한 Practical하게 다루는 곳은 많이 봤지만, 학문적인 Support를 주로 보지는 못 한것 같습니다.
+
     해당 방법과 유사한 방법으로, 주로 학계에서는 Trend와 Cycle을 구분하기 위한 방법으로 Hodrick Prescott Filter를 이용합니다.
+    (원레는 Macro Economy에서 Expansion/Recession을 구분하기 위해 사용하던 방법론)
 
     https://en.wikipedia.org/wiki/Hodrick%E2%80%93Prescott_filter 
     (최근에 흥미롭게 읽었던 논문 중에서는 4차 방정식이 Hodrick Prescott Filter보다 좋으니까 쓰지 말라는 말도 있습니다. https://econweb.ucsd.edu/~jhamilto/hp.pdf)
+    
+    현재에는 Outcome 변수에 대해서만 설명 드리자면, Preprocessing으로 아래와 같은 과정들을 취하고 있습니다.
+    핵심은 데이터의 분포를 가능한 Normal Distribution으로 만들어 주려는 것 이고요, 그런 경우에 Significant Change를 잡아내는 방향으로 하고 있습니다.
 
-    현재에는 Preprocessing으로 
+        1. Continuos Value에 대한 예측시에는 Log Return을 예측 값으로 사용 (그냥 Return의 분포는 Kurtosis가 너무 높음)
+        3. Continuos Value에 대한 예측시 HP Filter 이후에 Cycle 파트에 대한 예측, Trend 파트에 대한 예측
+        2. Discrete Value (Up/Down) 문제를 풀때는, Outcome 변수를 Significant Change를 상정하여 (1 std 이상 상승/횡보/하락)으로 구분
+
+    위의 설명은 Outcome 변수에 대한 것 이지만, 예측에 사용되는 다른 변수들은 그 변수의 특징에 따라서 다른 Preprocessing 과정을 거치고 있습니다.
