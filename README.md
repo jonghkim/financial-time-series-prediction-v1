@@ -6,8 +6,8 @@ This is a repository for the [[STUDYPIE] Predicting Financial Time Series using 
 
 ## Introduction
 - Instructor: [Jongho Kim](https://jonghkim.github.io/), Quantitative Researcher at NICE Pricing and Information (quantic.jh@gmail.com)
-- This sesseion DOES NOT aim to learn automatic trading systems, rather DOES focus on stock / coin price prediction based on deep learning, pursuing the most essential algorithms
-- This sesseion is an intermediate level course for those who have basic knowledge (Python, Numpy, Pandas, pip) of Python and machine learning
+- This session DOES NOT aim to learn automatic trading systems, rather DOES focus on stock / coin price prediction based on deep learning, pursuing the most essential algorithms
+- This session is an intermediate level course for those who have basic knowledge (Python, Numpy, Pandas, pip) of Python and machine learning
 
 ## Goal of this study
 - Understand the problems with financial time series predictions and advantages/disadvantages of machine learning 
