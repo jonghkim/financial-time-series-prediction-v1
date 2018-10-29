@@ -9,7 +9,7 @@
 - M2.1 Convolutional Neural Networks
     - [Video] [Loading in Your Own Data](https://pythonprogramming.net/loading-custom-data-deep-learning-python-tensorflow-keras/) (18min)
     - [Video] [Convolutional Neural Networks](https://pythonprogramming.net/convolutional-neural-network-deep-learning-python-tensorflow-keras/) (18min)
-    - [Hands-on-Labs] [Convolutional Neural Networks](https://drive.google.com/open?id=1NwhuSstEnyVsFlwBVRoP_OY-b4M5Wu9p) [[Code](https://colab.research.google.com/drive/1qKSNVWgBkqi7S4KL-pTnbBawmv7hT2fP)] [[Data](https://drive.google.com/open?id=1BKr22YQKb-AcsgBOJQevQOCLpgyWMFZe)]
+    - [Hands-on-Labs] [Convolutional Neural Networks](https://drive.google.com/open?id=1NwhuSstEnyVsFlwBVRoP_OY-b4M5Wu9p) [[Code](https://colab.research.google.com/drive/1qKSNVWgBkqi7S4KL-pTnbBawmv7hT2fP)] [[Data](https://drive.google.com/open?id=1Dje13qjGZwtaVhhjp-ZJVzeyzJrG6oc1)]
     - [Assignment] Simple 1D Convolution for Time Series Prediction [[Problem](https://colab.research.google.com/drive/14i30E5sGUYBPHJ-RASMrq_31r_BqG_Ed)] [[Solution](https://colab.research.google.com/drive/1ERGlczEPj1rnBhg_WYOWvFOvvGEra-52)]
 
 - M2.2 Tensorboard on Google Colab
