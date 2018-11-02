@@ -43,85 +43,85 @@
 
 #### Question3. Data 형태 (이미지, 동영상, 시계열 등)에 따른 Popular Architecture들을 알 수 있을까요? 
 
-    1. For Computer Vision Task
-![visual_task](supplementary/visual_task.png)
+1. For Computer Vision Task
+![visual_task](supplementary/visual_task.png){ width=50% }
 
-        - Classification: 
-            - GoogleNet: GoogleNet (or Inception Network) is a class of architecture designed by researchers at Google. GoogleNet was the winner of ImageNet 2014, where it proved to be a powerful model. In this architecture, along with going deeper (it contains 22 layers in comparison to VGG which had 19 layers), the researchers also made a novel approach called the Inception module. The final architecture contains multiple of these inception modules stacked one over the other.
+- Classification: 
+    - GoogleNet: GoogleNet (or Inception Network) is a class of architecture designed by researchers at Google. GoogleNet was the winner of ImageNet 2014, where it proved to be a powerful model. In this architecture, along with going deeper (it contains 22 layers in comparison to VGG which had 19 layers), the researchers also made a novel approach called the Inception module. The final architecture contains multiple of these inception modules stacked one over the other.
 
-![GoogleNet](supplementary/googlenet.png)
-![InceptionNet](supplementary/inceptionnet.png)
+![GoogleNet](supplementary/googlenet.png){ width=50% }
+![InceptionNet](supplementary/inceptionnet.png){ width=50% }
 
-        - Object Detection
-            - ResNeXt: ResNeXt is said to be the current state-of-the-art technique for object recognition. It builds upon the concepts of inception and resnet to bring about a new and improved architecture. 
+- Object Detection
+    - ResNeXt: ResNeXt is said to be the current state-of-the-art technique for object recognition. It builds upon the concepts of inception and resnet to bring about a new and improved architecture. 
 
-![ResNet](supplementary/res.png)
-![ResNeXt](supplementary/resnetxt.png)
+![ResNet](supplementary/res.png){ width=50% }
+![ResNeXt](supplementary/resnetxt.png){ width=50% }
 
-            - YOLO (You Only Look Once): YOLO is the current state-of-the-art real time system built on deep learning for solving image detection problems. As seen in the below given image, it first divides the image into defined bounding boxes, and then runs a recognition algorithm in parallel for all of these boxes to identify which object class do they belong to. After identifying this classes, it goes on to merging these boxes intelligently to form an optimal bounding box around the objects.
+    - YOLO (You Only Look Once): YOLO is the current state-of-the-art real time system built on deep learning for solving image detection problems. As seen in the below given image, it first divides the image into defined bounding boxes, and then runs a recognition algorithm in parallel for all of these boxes to identify which object class do they belong to. After identifying this classes, it goes on to merging these boxes intelligently to form an optimal bounding box around the objects.
 
-![YOLO](supplementary/yolo.png)
+![YOLO](supplementary/yolo.png){ width=50% }
 
-        - Instance Segmentation
-            - SegNet: SegNet is a deep learning architecture applied to solve image segmentation problem. It consists of sequence of processing layers (encoders) followed by a corresponding set of decoders for a pixelwise classification. 
+- Instance Segmentation
+    - SegNet: SegNet is a deep learning architecture applied to solve image segmentation problem. It consists of sequence of processing layers (encoders) followed by a corresponding set of decoders for a pixelwise classification. 
 
-![SegNet](supplementary/segnet.png)
+![SegNet](supplementary/segnet.png){ width=50% }
 
-        - Other Tasks
-            - Visual Reasoning (LSTM, CNN, RN Combinations)
-            - OCR: Google Maps and Street View (CNN, RNN Combinations)
-            - Teaching Machine to Draw (SketchRNN)
+- Other Tasks
+    - Visual Reasoning (LSTM, CNN, RN Combinations)
+    - OCR: Google Maps and Street View (CNN, RNN Combinations)
+    - Teaching Machine to Draw (SketchRNN)
 
-    2. For Natural Language Processing Task
-        - Word Similarities
-            - Word2Vec
+2. For Natural Language Processing Task
+    - Word Similarities
+        - Word2Vec
 
-            - Glove
+        - Glove
 
-        - Text Classification
-            - CNN + 
+    - Text Classification
+        - CNN + 
 
-        - Neural Machine Translation
-            - Seq2Seq
+    - Neural Machine Translation
+        - Seq2Seq
 
-            - Transformer
+        - Transformer
 
-        - Chatbots / Dialog Agents
-            - Memory Network
+    - Chatbots / Dialog Agents
+        - Memory Network
 
-        - Question Answering
-            - 
-
-    3. For Voice Related Task
-        - Speech Recognition
-
-        - Generation of Voice
-            - WaveNet(A generative model for raw audio): researchers made an autoregressive full-convolution WaveNet model based on previous approaches to image generation (PixelRNN and PixelCNN). The network was trained end-to-end: text for the input, audio for the output. 
-![WaveNet](supplementary/wavenet.gif)
-
-        - Lip Reading
-            - “omnichannel” model (audio + video): There are 100,000 sentences with audio and video in the dataset. Model: LSTM on audio, and CNN + LSTM on video. These two state vectors are fed to the final LSTM, which generates the result (characters).
-![LipReading](supplementary/lipreading.jpeg)
-![LipReadingExample](supplementary/lipreading_example.gif)
-
-        - Lip Sync from Audio
-            - Combination of models
-            1. RNN 2. Mouth Syntyhesis 3. Re-timing 4. Composite 
-
-![lipsync](supplementary/lipsync.png)
-
-    4. Generative Adversarial Networks
+    - Question Answering
         - 
 
-    5. Reinforcement Learning
-        - 
+3. For Voice Related Task
+    - Speech Recognition
+
+    - Generation of Voice
+        - WaveNet(A generative model for raw audio): researchers made an autoregressive full-convolution WaveNet model based on previous approaches to image generation (PixelRNN and PixelCNN). The network was trained end-to-end: text for the input, audio for the output. 
+![WaveNet](supplementary/wavenet.gif){ width=50% }
+
+    - Lip Reading
+        - “omnichannel” model (audio + video): There are 100,000 sentences with audio and video in the dataset. Model: LSTM on audio, and CNN + LSTM on video. These two state vectors are fed to the final LSTM, which generates the result (characters).
+![LipReading](supplementary/lipreading.jpeg){ width=50% }
+![LipReadingExample](supplementary/lipreading_example.gif){ width=50% }
+
+    - Lip Sync from Audio
+        - Combination of models
+        1. RNN 2. Mouth Syntyhesis 3. Re-timing 4. Composite 
+
+![lipsync](supplementary/lipsync.png){ width=50% }
+
+4. Generative Adversarial Networks
+    - 
+
+5. Reinforcement Learning
+    - 
 
 
-    References
-    - https://arxiv.org/pdf/1708.02709.pdf
-    - http://web.stanford.edu/class/cs224n/
-    - https://www.analyticsvidhya.com/blog/2017/08/10-advanced-deep-learning-architectures-data-scientists/
-    - https://blog.statsbot.co/deep-learning-achievements-4c563e034257
+#### References
+- https://arxiv.org/pdf/1708.02709.pdf
+- http://web.stanford.edu/class/cs224n/
+- https://www.analyticsvidhya.com/blog/2017/08/10-advanced-deep-learning-architectures-data-scientists/
+- https://blog.statsbot.co/deep-learning-achievements-4c563e034257
     
 ## Keras
 #### Question1. 텐서플로우에서 모델 저장하면 checkpoint 파일등 여러개가 만들어지잖아요. 케라스에서는 .h 파일 하나만 생기는겁니까? 혹시 텐서플로우의 .pb 파일에 대응하는 건가요?
