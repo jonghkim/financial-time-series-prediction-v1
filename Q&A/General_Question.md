@@ -3,13 +3,19 @@
 #### Question1. 머신러닝이 할수 있는 예측에 대하여 궁금합니다. 일부에서는 스포츠 승률이라던지 심지어는 복권당첨도 예측하던데요.
 
     머신 러닝은 짧은 시간 동안에 여러 분야에 극적인 영향을 끼치고 있습니다. 예측 할 수 있는 문제의 유형도 시간이 지나면서 Combinatorial하게 넓어지고 있는 것 같습니다. 
-    승포츠 승률 뿐만아니라, 기존에 연구되어 왔던 거의 모든 주제에 있어서 새로운 방법론의 등장으로 인해 새롭게 다루어 지고 있는 것 같습니다.
+
+    승포츠 승률 뿐만아니라, 기존에 연구되어 왔던 거의 모든 주제에 있어서 새로운 방법론의 등장으로 인해 새롭게 다루어 지고 있는 것 같습니다. 
+
+    (단, 얘기 주신, 복권 당첨의 경우는 독립된 환경에서 random하게 추출한 결과일텐데,
+     단기적으로는 마치 어떠한 요인이 결과와 correlation이 있는 것처럼 보일 수 있어도 spurious correlation일 것 입니다.)
 
     개인적으로 제 주변에서 재밌게 하고 있는 연구들은, 
-        1. 의료 분야 (쥐의 똥에서 추출한 데이터에 기반해서 쥐의 장 내부에 있는 모든 박테리아의 종류와 양을 예측함), 
-        2. 암 환자들의 모바일 사용 정도로 우울증 상태를 예측, 
-        3. 어떤 식으로 Speech를 한 벤처 기업가가 성공적으로 투자를받을 수 있을지 예측 
-    등등이 있는 것 같습니다. 이외에도 나열하자면 끝이 없는 예측 문제들이 있습니다.
+        1. (의료 분야) 암 환자들의 모바일 사용 정도로 우울증 상태를 예측
+        2. (의료 분야) 쥐의 똥에서 추출한 데이터에 기반해서 쥐의 장 내부에 있는 모든 박테리아의 종류와 양을 예측
+        3. (경영학 분야) Airbnb에서 어떤 사진을 찍어 올려야 수입이 높은지에 대한 예측
+        4. (경영학 분야) 어떤 식으로 Speech를 한 벤처 기업가가 성공적으로 투자를받을 수 있을지 예측
+        5. (경영학 분야) 어떤 식으로 Hand Gesture를 보여야 인터넷 강의의 등록률이 높아질지 예측        
+    등이 있는 것 같습니다. 이외에도 나열하자면 끝이 없는 예측 문제들이 있습니다.
 
     현실에서의 Application이 궁금하시면, Top 10 Applications of Machine Learning (https://www.youtube.com/watch?v=ahRcGObyEZo)을 참고해 보시면 좋을 것 같습니다.
 
@@ -35,8 +41,88 @@
 
     하지만, 주의하셔야 할점은 M1.2에서 다루었듯이, Theory 없이 (Causual Relationship) 잘 못된 Factor에 기반한 예측은 심각한 Bias를 만들어 낼 수도 있기 때문에 주의가 필요한 것 같습니다.
 
-#### Question3. Data 형태 (이미지, 동영상, 시계열 등)에 따른 Popular Architecture들을 알 수 있을까요? (Work-in-Progress)
+#### Question3. Data 형태 (이미지, 동영상, 시계열 등)에 따른 Popular Architecture들을 알 수 있을까요? 
 
+    1. For Computer Vision Task
+![visual_task](supplementary/visual_task.png)
+
+        - Classification: 
+            - GoogleNet: GoogleNet (or Inception Network) is a class of architecture designed by researchers at Google. GoogleNet was the winner of ImageNet 2014, where it proved to be a powerful model. In this architecture, along with going deeper (it contains 22 layers in comparison to VGG which had 19 layers), the researchers also made a novel approach called the Inception module. The final architecture contains multiple of these inception modules stacked one over the other.
+
+![GoogleNet](supplementary/googlenet.png)
+![InceptionNet](supplementary/inceptionnet.png)
+
+        - Object Detection
+            - ResNeXt: ResNeXt is said to be the current state-of-the-art technique for object recognition. It builds upon the concepts of inception and resnet to bring about a new and improved architecture. 
+
+![ResNet](supplementary/res.png)
+![ResNeXt](supplementary/resnetxt.png)
+
+            - YOLO (You Only Look Once): YOLO is the current state-of-the-art real time system built on deep learning for solving image detection problems. As seen in the below given image, it first divides the image into defined bounding boxes, and then runs a recognition algorithm in parallel for all of these boxes to identify which object class do they belong to. After identifying this classes, it goes on to merging these boxes intelligently to form an optimal bounding box around the objects.
+
+![YOLO](supplementary/yolo.png)
+
+        - Instance Segmentation
+            - SegNet: SegNet is a deep learning architecture applied to solve image segmentation problem. It consists of sequence of processing layers (encoders) followed by a corresponding set of decoders for a pixelwise classification. 
+
+![SegNet](supplementary/segnet.png)
+
+        - Other Tasks
+            - Visual Reasoning (LSTM, CNN, RN Combinations)
+            - OCR: Google Maps and Street View (CNN, RNN Combinations)
+            - Teaching Machine to Draw (SketchRNN)
+
+    2. For Natural Language Processing Task
+        - Word Similarities
+            - Word2Vec
+
+            - Glove
+
+        - Text Classification
+            - CNN + 
+
+        - Neural Machine Translation
+            - Seq2Seq
+
+            - Transformer
+
+        - Chatbots / Dialog Agents
+            - Memory Network
+
+        - Question Answering
+            - 
+
+    3. For Voice Related Task
+        - Speech Recognition
+
+        - Generation of Voice
+            - WaveNet(A generative model for raw audio): researchers made an autoregressive full-convolution WaveNet model based on previous approaches to image generation (PixelRNN and PixelCNN). The network was trained end-to-end: text for the input, audio for the output. 
+![WaveNet](supplementary/wavenet.gif)
+
+        - Lip Reading
+            - “omnichannel” model (audio + video): There are 100,000 sentences with audio and video in the dataset. Model: LSTM on audio, and CNN + LSTM on video. These two state vectors are fed to the final LSTM, which generates the result (characters).
+![LipReading](supplementary/lipreading.jpeg)
+![LipReadingExample](supplementary/lipreading_example.gif)
+
+        - Lip Sync from Audio
+            - Combination of models
+            1. RNN 2. Mouth Syntyhesis 3. Re-timing 4. Composite 
+
+![lipsync](supplementary/lipsync.png)
+
+    4. Generative Adversarial Networks
+        - 
+
+    5. Reinforcement Learning
+        - 
+
+
+    References
+    - https://arxiv.org/pdf/1708.02709.pdf
+    - http://web.stanford.edu/class/cs224n/
+    - https://www.analyticsvidhya.com/blog/2017/08/10-advanced-deep-learning-architectures-data-scientists/
+    - https://blog.statsbot.co/deep-learning-achievements-4c563e034257
+    
 ## Keras
 #### Question1. 텐서플로우에서 모델 저장하면 checkpoint 파일등 여러개가 만들어지잖아요. 케라스에서는 .h 파일 하나만 생기는겁니까? 혹시 텐서플로우의 .pb 파일에 대응하는 건가요?
 
@@ -78,7 +164,7 @@
 
     해당 방법은 Module3에서 관련하여 보다 자세히 다룰 예정입니다. (Learning Curves, Batch Normalization, Dropout and Regularization, Continuous Learning, Hyperparameter Search)
 
-#### Question4. Keras Model Optimizer에서 Option (optimizer, loss, metrics) 항목에서, 각 종류별로 어떤 상황에 어떤 옵션을 사용해야 하나요? 그리고, Loss와 Accuracy 값은 어떻게 해석해야 하나요? (Work-in-Progress)(Work-in-Progress)
+#### Question4. Keras Model Optimizer에서 Option (optimizer, loss, metrics) 항목에서, 각 종류별로 어떤 상황에 어떤 옵션을 사용해야 하나요? 그리고, Loss와 Accuracy 값은 어떻게 해석해야 하나요? (Work-in-Progress)
 
     1. Learning Rate
         cost function의 모양을 고려
@@ -118,11 +204,13 @@
 
     https://machinelearningmastery.com/custom-metrics-deep-learning-keras-python/ 
 
-#### Question2. keras와 다르게 텐서플로우에서 왜 변수초기화를 안하면 오류가 나는가요?
+#### Question5. keras와 다르게 텐서플로우에서 왜 변수초기화를 안하면 오류가 나는가요?
 
     tensorflow api는 low level api로 세션에서 사용되는 모든 변수를 초기화해 주어야 합니다. 
     반면에 keras, slim과 같은 high level api는 변수 초기화가 자동으로 되는 것 입니다. 
     Explicit initialization의 장점은 모델을 체크 포인트에서 다시로드 하는 경우에는 오히려, 계산적인 비용이 드는 initialization을 다시 실행하지 않는 이점이 있습니다. 
+
+#### Question6. input_shape는 언제 쓰는 것 인가요? (Work-in-Progress)
 
 ## Data
 #### Question1. Test, Train Set의 할당에 황금(?) 비율이 있는지요? 그리고 예를 들어 data가 충분하지 않을때 Train에 많이 할당하면 좋을텐데, 이런 경우를 위해서 할당량을 조절할 방법이 있나요?

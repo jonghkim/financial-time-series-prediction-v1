@@ -36,7 +36,7 @@
     이 외에도 하드웨어에 따라서 학습 속도면에서 커널 사이즈를 어떻게 선택할지도 관련이 있는 것으로 알고 있습니다. 
     따라서 Universal한 design이 있다기 보다는, 주어진 상황과 리소스에 맞춰서 선택해야하는 문제가 있는 것 같습니다.
 
-#### Question3. Cat 사진중에 140.jpg 파일은 아래 불러오는 과정중에서 Exception으로 처리가 됩니다. 해당 이미지는 왜 안불러지는건가요?
+#### Question3. Cat 사진중에 140.jpg 파일은 아래 불러오는 과정중에서 Exception으로 처리가 됩니다. 해당 이미지는 왜 안불러지는건가요? (Work-in-Progress)
 
 ## Module2.2 Tensorboard on Google Colab
 

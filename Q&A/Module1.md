@@ -101,7 +101,7 @@
     (http://scott.fortmann-roe.com/docs/BiasVariance.html)
 
 
-## Module1.2 Tensorflow Keras API on Google Colab
+## Module1.5 Tensorflow Keras API on Google Colab
 #### Question1. 모델 만드는 법에 대해서 더 배우고 싶어요. 있는 코드 따라하는거야 문제 없는데 새로운 모델을 만들라고 하면 코드를 전혀 생각해 낼수 없을것 같습니다.
 
     큰 Process (Data Preprocessing -> Model Build -> Model Compile -> Model Train -> Prediction) 를 항상 기억하시고,
