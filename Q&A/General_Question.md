@@ -46,7 +46,7 @@
 - For Computer Vision Task
 <img src="supplementary/visual_task.png" width="80%" align="center">
 
-    - Classification: 
+    1. Classification: 
         - GoogleNet
         GoogleNet (or Inception Network) is a class of architecture designed by researchers at Google. 
         GoogleNet was the winner of ImageNet 2014, where it proved to be a powerful model. 
@@ -57,7 +57,7 @@
 <img src="supplementary/googlenet.png" width="80%" align="center">
 <img src="supplementary/inceptionnet.png" width="80%" align="center">
 
-    - Object Detection
+    2. Object Detection
         - ResNeXt
         ResNeXt is said to be the current state-of-the-art technique for object recognition. 
         It builds upon the concepts of inception and resnet to bring about a new and improved architecture. 
@@ -73,49 +73,49 @@
 
 <img src="supplementary/yolo.png" width="80%" align="center">
 
-    - Instance Segmentation
+    3. Instance Segmentation
         - SegNet
         SegNet is a deep learning architecture applied to solve image segmentation problem. 
         It consists of sequence of processing layers (encoders) followed by a corresponding set of decoders for a pixelwise classification. 
 
 <img src="supplementary/segnet.png" width="80%" align="center">
 
-    - Other Tasks
+    4. Other Tasks
         - Visual Reasoning (LSTM, CNN, RN Combinations)
         - OCR: Google Maps and Street View (CNN, RNN Combinations)
         - Teaching Machine to Draw (SketchRNN)
 
 - For Natural Language Processing Task
-    - Word Similarities
+    1. Word Similarities
         - Word2Vec
 
         - Glove
 
-    - Text Classification
+    2. Text Classification
         - CNN + 
 
-    - Neural Machine Translation
+    3. Neural Machine Translation
         - Seq2Seq
 
         - Transformer
 
-    - Chatbots / Dialog Agents
+    4. Chatbots / Dialog Agents
         - Memory Network
 
-    - Question Answering
+    5. Question Answering
         - 
 
 - For Voice Related Task
-    - Speech Recognition
+    1. Speech Recognition
 
-    - Generation of Voice
+    2. Generation of Voice
         - WaveNet(A generative model for raw audio)
         researchers made an autoregressive full-convolution WaveNet model based on previous approaches to image generation (PixelRNN and PixelCNN). 
         The network was trained end-to-end: text for the input, audio for the output. 
 
 <img src="supplementary/wavenet.gif" width="80%" align="center">
 
-    - Lip Reading
+    3. Lip Reading
         - “omnichannel” model (audio + video)
         There are 100,000 sentences with audio and video in the dataset. Model: LSTM on audio, and CNN + LSTM on video. 
         These two state vectors are fed to the final LSTM, which generates the result (characters).
@@ -123,7 +123,7 @@
 <img src="supplementary/lipreading_example.gif" width="80%" align="center">    
 
 
-    - Lip Sync from Audio
+    4. Lip Sync from Audio
         - Combination of models
         1. RNN 2. Mouth Syntyhesis 3. Re-timing 4. Composite 
 
