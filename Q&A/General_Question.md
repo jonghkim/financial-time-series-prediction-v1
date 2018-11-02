@@ -41,7 +41,7 @@
 
     하지만, 주의하셔야 할점은 M1.2에서 다루었듯이, Theory 없이 (Causual Relationship) 잘 못된 Factor에 기반한 예측은 심각한 Bias를 만들어 낼 수도 있기 때문에 주의가 필요한 것 같습니다.
 
-#### Question3. Data 형태 (이미지, 동영상, 시계열 등)에 따른 Popular Architecture들을 알 수 있을까요? 
+#### Question3. Data 형태 (이미지, 동영상, 시계열 등)에 따른 Popular Architecture들을 알 수 있을까요? (Work-in-Progress)
 - [For Computer Vision Task](docs/computer_vision.md)
     1. Classification
     2. Object Detection
@@ -119,7 +119,8 @@ feature_function = K.function([inp], [out])
 
 #### Question3. hyper parameter 최적화를 위한 설정
 
-    해당 방법은 Module3에서 관련하여 보다 자세히 다룰 예정입니다. (Learning Curves, Batch Normalization, Dropout and Regularization, Continuous Learning, Hyperparameter Search)
+    해당 방법은 Module3에서 관련하여 보다 자세히 다룰 예정입니다. 
+    (Learning Curves, Batch Normalization, Dropout and Regularization, Continuous Learning, Hyperparameter Search)
 
 #### Question4. Keras Model Optimizer에서 Option (optimizer, loss, metrics) 항목에서, 각 종류별로 어떤 상황에 어떤 옵션을 사용해야 하나요? 그리고, Loss와 Accuracy 값은 어떻게 해석해야 하나요? (Work-in-Progress)
 
