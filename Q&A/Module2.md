@@ -1,5 +1,5 @@
 # Module1
-## Module12.1 Convolutional Neural Networks
+## Module2.1 Convolutional Neural Networks
 #### Question1. 이미지 데이터를 왜 Reshape 해주는 건가요? CNN에서 Filter와 Image에 대한 파라미터는 어떻게 설정해야 하나요?
 
     이미지 데이터의 regular한 모양은 (Number of image, Height of image, widgth of image, color channel (or output channel))입니다. 
@@ -38,9 +38,9 @@
 
 #### Question3. Cat 사진중에 140.jpg 파일은 아래 불러오는 과정중에서 Exception으로 처리가 됩니다. 해당 이미지는 왜 안불러지는건가요?
 
-## Module12.2 Tensorboard on Google Colab
+## Module2.2 Tensorboard on Google Colab
 
-## Module12.3 Save and Load on Google Colab
+## Module2.3 Save and Load on Google Colab
 #### Question1. 모델이 저장되는 방식이 h5 인가요? ProtoBuffer 포맷 즉 pb파일로 만드는법을 알려주세요
 
     해당 기능은 keras 자체적으로는 제공하지 않지만 tensorflow의 기능을 이용해서 pb 파일을 만드실 수 있습니다.
@@ -53,7 +53,7 @@
     https://stackoverflow.com/questions/45466020/how-to-export-keras-h5-to-tensorflow-pb
     https://blog.metaflow.fr/tensorflow-how-to-freeze-a-model-and-serve-it-with-a-python-api-d4f3596b3adc
 
-## Module12.4 Recurrent Neural Networks
+## Module2.4 Recurrent Neural Networks
 
-## Module12.5 Preprocessing for Cryptocurrency Data
+## Module2.5 Preprocessing for Cryptocurrency Data
    
