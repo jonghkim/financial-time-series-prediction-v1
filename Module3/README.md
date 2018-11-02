@@ -14,3 +14,6 @@
 - M3.5
 - M3.6 Assignments
 - M3.7 Slack Discussion
+
+## Q&A
+- Module3. [Implementing Time Series Prediction Models](../Q&A/Module3.md)

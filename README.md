@@ -30,7 +30,7 @@ This is a repository for the [[STUDYPIE] Predicting Financial Time Series using 
 
 ## Q&A
 - [General Machine Learning Questions](Q&A/General_Question.md)
-- Module 1. [Getting Started + Google Colab Setting](Q&A/Module1.md)
-- Module 2. [Learning Tensorflow Keras API]()
-- Module 3. [Implementing Time Series Prediction Models]()
-- Module 4. [Implementing Time Series Prediction Models (More Comprehensive)]()
+- Module1. [Getting Started + Google Colab Setting](Q&A/Module1.md)
+- Module2. [Learning Tensorflow Keras API](Q&A/Module2.md)
+- Module3. [Implementing Time Series Prediction Models](Q&A/Module3.md)
+- Module4. [Implementing Time Series Prediction Models (More Comprehensive)](Q&A/Module4.md)

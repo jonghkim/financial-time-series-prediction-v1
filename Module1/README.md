@@ -28,6 +28,9 @@
 
 - M1.7 Slack Discussion
 
+## Q&A
+- Module1. [Getting Started + Google Colab Setting](../Q&A/Module1.md)
+
 ## References
 - [KAIST Summer Session 2018](https://sites.google.com/view/kaist-mis-session2018), 2018
 - [전직 트레이더, 초단타 퀀트 매매법을 말하다: 권용진 대표 인터뷰](https://ppss.kr/archives/177286), 2018

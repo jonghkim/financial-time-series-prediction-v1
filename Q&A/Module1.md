@@ -7,41 +7,6 @@
     3. Algorithmic trading:trading pattern을 찾고, trends를 예측하기 위하여 AI를 적용시켜서, 더 성공적인 stock trading decisions을 내리도록 함.
     4. Customer recommendation / Credit lending: consumer data, financial lending 혹은 insurance results등의 자료를 기반으로, 고객들의 관심분야를 추천에서부터, 대출 여부를 평가하는 등의 분야에도 적용 가능함.
     5. Porfolio Management
-
-#### Question1. 머신러닝이 할수 있는 예측에 대하여 궁금합니다. 일부에서는 스포츠 승률이라던지 심지어는 복권당첨도 예측하던데요.
-
-    머신 러닝은 짧은 시간 동안에 여러 분야에 극적인 영향을 끼치고 있습니다. 예측 할 수 있는 문제의 유형도 시간이 지나면서 Combinatorial하게 넓어지고 있는 것 같습니다. 
-    승포츠 승률 뿐만아니라, 기존에 연구되어 왔던 거의 모든 주제에 있어서 새로운 방법론의 등장으로 인해 새롭게 다루어 지고 있는 것 같습니다.
-
-    개인적으로 제 주변에서 재밌게 하고 있는 연구들은, 
-        1. 의료 분야 (쥐의 똥에서 추출한 데이터에 기반해서 쥐의 장 내부에 있는 모든 박테리아의 종류와 양을 예측함), 
-        2. 암 환자들의 모바일 사용 정도로 우울증 상태를 예측, 
-        3. 어떤 식으로 Speech를 한 벤처 기업가가 성공적으로 투자를받을 수 있을지 예측 
-    등등이 있는 것 같습니다. 이외에도 나열하자면 끝이 없는 예측 문제들이 있습니다.
-
-    현실에서의 Application이 궁금하시면, Top 10 Applications of Machine Learning (https://www.youtube.com/watch?v=ahRcGObyEZo)을 참고해 보시면 좋을 것 같습니다.
-
-    혹시 경제학 분야에서의 적용이 궁금하시면, Stanford의 Susan Athey 교수의 "The Impact of Machine Learning on Economics" 논문을 읽어보시길 권유드립니다. (https://www.nber.org/chapters/c14009.pdf)
-    
-#### Question2. 과연 딥러닝으로 금융시장을 이길수있는 전략을 도출할수있을까요?
-
-    효율적 시장가설에 따르면 알려진 정보로는 수익(alpha)을 낼 수 없습니다. 따라서, 다른 사람에 비해서 Superior한 정보, 방법론 등을 가지고 있는 것이 중요한 것 같습니다. 
-
-    주식에서 주가 예측 모형으로 가장 유명한 Fama French 3 Factor 모델을 예로 들자면,
-    해당 모델을 통해서 과거 몇년 동안은 예측률이 있고 수익이 났지만, 해당 모델이 널리 알려진 뒤에는 
-    더 이상 다른 사람에 비해 Superior한 모델이 아니기 때문에 수익이 관측되지 않는다 라는 논문이 있습니다.
-    
-    또한 주식에서는 큰 주식은 이미 너무나 효율적이여서 예측 모델로 수익을 내기가 쉽지 않고, 
-    작은 주식은 거래량이 적어서 높은 슬리피지로 인해 수익을 만들어 내기 어려운 점이 있습니다. 
-    그래서, 중간 사이즈 크기의 주식에서 오히려 Back test시 수익이 나는 경우도 있는 것 같습니다. 
-    코인의 경우도 마찬가지로 BTC에서는 이미 여러 시장 참가자들에 의해 Alpha가 사라지고,
-    중간 사이즈의 코인에서의 수익률이 더 나아보기도 합니다. 
-
-    그런데, 예측 모델의 Accuracy Level을 다른 사람의 모델에 비해서 훨씬 더 끌어올릴 수가 있다면, 
-    (새로운 Factor 사용, 다른 모델 사용)
-    우월한 방법론으로 Alpha를 찾을 수 있지 않을까 기대하고 있습니다.
-
-    하지만, 주의하셔야 할점은 M1.2에서 다루었듯이, Theory 없이 (Causual Relationship) 잘 못된 Factor에 기반한 예측은 심각한 Bias를 만들어 낼 수도 있기 때문에 주의가 필요한 것 같습니다.
     
 ## Module1.2 Machine Learning for Financial Time Series Prediction
 #### [주간 질문] Deep Learning Predictor를 이용한 방법은 Traditional Predictors에 비해 어떤 이점이 있을까요?
@@ -131,7 +96,7 @@
     
     아래의 자료의 그림 "Graphical illustration of bias and variance" 을 보시면, Low Bias에 대한 이해가 분명해 지실 것 같습니다.
     
-![bias_vs_variance](bias_vs_variance.png)
+![bias_vs_variance](supplementary/bias_vs_variance.png)
 
     (http://scott.fortmann-roe.com/docs/BiasVariance.html)
 
@@ -154,7 +119,7 @@
 
     예를 들어, 2차원에서 아래와 같은 2진 분류 문제가 있다고 가정하면, 아래 3개의 신경망(모두 하나의 층만 있음)은 Node의 개수를 달리 했을 때의 결과를 보여 줍니다.
 
-![layer_sizes](layer_sizes.jpeg)
+![layer_sizes](supplementary/layer_sizes.jpeg)
 
     위의 다이어그램에서 뉴런이 더 많은 네트워크는 더 복잡한 기능을 표현할 수 있지만, 이 결과는 blessing과 (더 복잡한 데이터를 분류하는 것을 배울 수 있기 때문에)과 Curse입니다 (훈련 데이터를 Overfitting 하기 쉽기 때문에). 
     복잡한 모형보다, 3개의 hidden neuron을 가진 모델이 전체 데이터를 큰 두가지 모양으로 구분하고 나머지 점들은 noise로 해석하는데, 더 나은 일반화를 한 모델일 수 있습니다.

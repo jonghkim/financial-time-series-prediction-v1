@@ -1,4 +1,130 @@
 # General Q&A
+## Deep Learning
+#### Question1. 머신러닝이 할수 있는 예측에 대하여 궁금합니다. 일부에서는 스포츠 승률이라던지 심지어는 복권당첨도 예측하던데요.
+
+    머신 러닝은 짧은 시간 동안에 여러 분야에 극적인 영향을 끼치고 있습니다. 예측 할 수 있는 문제의 유형도 시간이 지나면서 Combinatorial하게 넓어지고 있는 것 같습니다. 
+    승포츠 승률 뿐만아니라, 기존에 연구되어 왔던 거의 모든 주제에 있어서 새로운 방법론의 등장으로 인해 새롭게 다루어 지고 있는 것 같습니다.
+
+    개인적으로 제 주변에서 재밌게 하고 있는 연구들은, 
+        1. 의료 분야 (쥐의 똥에서 추출한 데이터에 기반해서 쥐의 장 내부에 있는 모든 박테리아의 종류와 양을 예측함), 
+        2. 암 환자들의 모바일 사용 정도로 우울증 상태를 예측, 
+        3. 어떤 식으로 Speech를 한 벤처 기업가가 성공적으로 투자를받을 수 있을지 예측 
+    등등이 있는 것 같습니다. 이외에도 나열하자면 끝이 없는 예측 문제들이 있습니다.
+
+    현실에서의 Application이 궁금하시면, Top 10 Applications of Machine Learning (https://www.youtube.com/watch?v=ahRcGObyEZo)을 참고해 보시면 좋을 것 같습니다.
+
+    혹시 경제학 분야에서의 적용이 궁금하시면, Stanford의 Susan Athey 교수의 "The Impact of Machine Learning on Economics" 논문을 읽어보시길 권유드립니다. (https://www.nber.org/chapters/c14009.pdf)
+    
+#### Question2. 과연 딥러닝으로 금융시장을 이길수있는 전략을 도출할수있을까요?
+
+    효율적 시장가설에 따르면 알려진 정보로는 수익(alpha)을 낼 수 없습니다. 따라서, 다른 사람에 비해서 Superior한 정보, 방법론 등을 가지고 있는 것이 중요한 것 같습니다. 
+
+    주식에서 주가 예측 모형으로 가장 유명한 Fama French 3 Factor 모델을 예로 들자면,
+    해당 모델을 통해서 과거 몇년 동안은 예측률이 있고 수익이 났지만, 해당 모델이 널리 알려진 뒤에는 
+    더 이상 다른 사람에 비해 Superior한 모델이 아니기 때문에 수익이 관측되지 않는다 라는 논문이 있습니다.
+    
+    또한 주식에서는 큰 주식은 이미 너무나 효율적이여서 예측 모델로 수익을 내기가 쉽지 않고, 
+    작은 주식은 거래량이 적어서 높은 슬리피지로 인해 수익을 만들어 내기 어려운 점이 있습니다. 
+    그래서, 중간 사이즈 크기의 주식에서 오히려 Back test시 수익이 나는 경우도 있는 것 같습니다. 
+    코인의 경우도 마찬가지로 BTC에서는 이미 여러 시장 참가자들에 의해 Alpha가 사라지고,
+    중간 사이즈의 코인에서의 수익률이 더 나아보기도 합니다. 
+
+    그런데, 예측 모델의 Accuracy Level을 다른 사람의 모델에 비해서 훨씬 더 끌어올릴 수가 있다면, 
+    (새로운 Factor 사용, 다른 모델 사용)
+    우월한 방법론으로 Alpha를 찾을 수 있지 않을까 기대하고 있습니다.
+
+    하지만, 주의하셔야 할점은 M1.2에서 다루었듯이, Theory 없이 (Causual Relationship) 잘 못된 Factor에 기반한 예측은 심각한 Bias를 만들어 낼 수도 있기 때문에 주의가 필요한 것 같습니다.
+
+#### Question3. Data 형태 (이미지, 동영상, 시계열 등)에 따른 Popular Architecture들을 알 수 있을까요? (Work-in-Progress)
+
+## Keras
+#### Question1. 텐서플로우에서 모델 저장하면 checkpoint 파일등 여러개가 만들어지잖아요. 케라스에서는 .h 파일 하나만 생기는겁니까? 혹시 텐서플로우의 .pb 파일에 대응하는 건가요?
+
+    Checkpointing 기능은 긴 시간 (days, weeks) 동안의 학습시, train과정에 문제가 있더라도 모든 학습 정보를 잃지 않도록하는데 필수적인 기능이여서, 장기적으로는 꼭 배워둘 필요가 있는 것 같습니다. 
+
+    질문 주신 Keras의 경우에는 아래의 callback API를 통해 checkpointing 기능을 제공합니다. 
+    해당 기능을 통해서, 저장 위치, checkpoint 이름 (epoch number 혹은 metric으로도 naming 가능), 
+    어떠한 조건 (save_best_only, save_weights_only, period)을 만족하는 checkpoint를 생성 할지를 설정할 수 있습니다.
+    https://keras.io/callbacks/#modelcheckpoint
+
+    Google Colab에서는 얘기주신 것처럼 training 이후 HDF5 format으로 전체 모델을 직접 저정할 수도 있으며, 
+    callback API를 통해 training 과정 중에 모델을 저장하는 것도 가능합니다. 
+    자세한 checkpoint 저장 방법은 아래의 튜토리얼을 참조해 주세요. 
+    https://colab.research.google.com/github/tensorflow/models/blob/master/samples/core/tutorials/keras/save_and_restore_models.ipynb#scrollTo=2S4xrNJRilwi
+
+#### Question2. keras에서 Build Model부분이 마치 black box 같아 보입니다. 모델 학습에도 변수들의 변화되는 과정을 print 해볼만한 방법이 있을까요? 
+
+    neural net의 디버깅은 원인이 너무나 다양할 수 있어서 (exploding gradients, dead relu, vanishing gradient etc) 항상 쉬운 일이 아닌것 같습니다. 
+    저는 주로 model compile 이후에 "model.summary()" 를 통해 전체 shape 구조를 보거나, keras model의 특정 layer를 취득하여 해당 layer의 결과를 확인할 수 있는 function을 만들어 사용합니다. 
+    
+    간략한 설명을 드리자면, 모델 학습 이후에, 보고자하는 Inner Layer의 Input과 Output을 이용햐여 새로운 함수를 만들어 주시면 됩니다.
+
+    ~~~
+    inp = model.layers[0].input
+    out = model.laters[0].output
+
+    feature_function = K.function([inp], [out])
+    ~~~
+
+    해당 방법에 대한 구체적인 설명은 아래 링크를 참조바랍니다.
+
+    http://laid.delanover.com/debugging-a-keras-neural-network/
+
+    추가적으로 neural network 모델의 일반적인 디버깅 방식은 아래의 링크를 참조해 주시면 좋을 것 같습니다.
+
+    https://medium.com/machine-learning-world/how-to-debug-neural-networks-manual-dc2a200f10f2
+
+#### Question3. hyper parameter 최적화를 위한 설정
+
+    해당 방법은 Module3에서 관련하여 보다 자세히 다룰 예정입니다. (Learning Curves, Batch Normalization, Dropout and Regularization, Continuous Learning, Hyperparameter Search)
+
+#### Question4. Keras Model Optimizer에서 Option (optimizer, loss, metrics) 항목에서, 각 종류별로 어떤 상황에 어떤 옵션을 사용해야 하나요? 그리고, Loss와 Accuracy 값은 어떻게 해석해야 하나요? (Work-in-Progress)(Work-in-Progress)
+
+    1. Learning Rate
+        cost function의 모양을 고려
+         
+        flat 할 경우?
+
+        너무 steep할 경우?
+
+        너무 작으면? 너무 크면?
+    
+    2. Optimizer
+        1. Gradient Descent
+        2. Stochastic Gradient Descent
+        3. Mini Batch Gradient Descent
+
+        SGD, Momentum, AdaGrad 등등
+
+    3. Kernel Initialization
+        Very Sensitive, 
+
+        똑같은 설정이여도, 새로 돌리면 결과가 다를 수 있음
+
+        zeros
+        uniform
+        normal
+        he_normal
+        lecun_uniform
+
+    4. loss
+        1. categorical~~
+
+    5. keras에서 performance를 평가하기 위한 방법
+    
+    https://machinelearningmastery.com/evaluate-performance-deep-learning-models-keras/
+
+    6. Accuracy의 종류
+
+    https://machinelearningmastery.com/custom-metrics-deep-learning-keras-python/ 
+
+#### Question2. keras와 다르게 텐서플로우에서 왜 변수초기화를 안하면 오류가 나는가요?
+
+    tensorflow api는 low level api로 세션에서 사용되는 모든 변수를 초기화해 주어야 합니다. 
+    반면에 keras, slim과 같은 high level api는 변수 초기화가 자동으로 되는 것 입니다. 
+    Explicit initialization의 장점은 모델을 체크 포인트에서 다시로드 하는 경우에는 오히려, 계산적인 비용이 드는 initialization을 다시 실행하지 않는 이점이 있습니다. 
+
+## Data
 #### Question1. Test, Train Set의 할당에 황금(?) 비율이 있는지요? 그리고 예를 들어 data가 충분하지 않을때 Train에 많이 할당하면 좋을텐데, 이런 경우를 위해서 할당량을 조절할 방법이 있나요?
 
     train / test split의 목적은 generalization error 를 최소화 하기 위함인데, 둘 사이의 샘플 개수 결정은 경쟁 관계에 있습니다. 
@@ -16,7 +142,6 @@
 
     이론적인 부분을 조금 더 살펴보고 싶으시면 아래 논문을 추천드립니다.
     https://pdfs.semanticscholar.org/452e/6c05d46e061290fefff8b46d0ff161998677.pdf
-
 
 #### Question2. data을 scaling하고 train 하는 이유가 있을것 같아서 문의드립니다.  어떤 모델에서든 항상 0~1값으로 변경해야하는것인지?
 
@@ -46,38 +171,7 @@
     가량 Exact Boundary가 있는 문제의 경우에는 Standardization이 적절하지 않을 수도 있고, 
     min-max scaling은 long tail 분포가 있는 문제에 대해서는 적절하지 않을 수 있습니다. 
 
-#### Question3. 텐서플로우에서 모델 저장하면 checkpoint 파일등 여러개가 만들어지잖아요. 케라스에서는 .h 파일 하나만 생기는겁니까? 혹시 텐서플로우의 .pb 파일에 대응하는 건가요?
-
-    Checkpointing 기능은 긴 시간 (days, weeks) 동안의 학습시, train과정에 문제가 있더라도 모든 학습 정보를 잃지 않도록하는데 필수적인 기능이여서, 장기적으로는 꼭 배워둘 필요가 있는 것 같습니다. 
-
-    질문 주신 Keras의 경우에는 아래의 callback API를 통해 checkpointing 기능을 제공합니다. 
-    해당 기능을 통해서, 저장 위치, checkpoint 이름 (epoch number 혹은 metric으로도 naming 가능), 
-    어떠한 조건 (save_best_only, save_weights_only, period)을 만족하는 checkpoint를 생성 할지를 설정할 수 있습니다.
-    https://keras.io/callbacks/#modelcheckpoint
-
-    Google Colab에서는 얘기주신 것처럼 training 이후 HDF5 format으로 전체 모델을 직접 저정할 수도 있으며, 
-    callback API를 통해 training 과정 중에 모델을 저장하는 것도 가능합니다. 
-    자세한 checkpoint 저장 방법은 아래의 튜토리얼을 참조해 주세요. 
-    https://colab.research.google.com/github/tensorflow/models/blob/master/samples/core/tutorials/keras/save_and_restore_models.ipynb#scrollTo=2S4xrNJRilwi
-
-#### Question4. keras에서 Build Model부분이 마치 black box 같아 보입니다. 모델 학습에도 변수들의 변화되는 과정을 print 해볼만한 방법이 있을까요? 
-
-    neural net의 디버깅은 원인이 너무나 다양할 수 있어서 (exploding gradients, dead relu, vanishing gradient etc) 항상 쉬운 일이 아닌것 같습니다. 
-    저는 주로 model compile 이후에 "model.summary()" 를 통해 전체 shape 구조를 보거나, keras model의 특정 layer를 취득하여 해당 layer의 결과를 확인할 수 있는 function을 만들어 사용합니다. 
-    해당 방법에 대해서는 아래 링크를 참조해 주시면 됩니다.
-
-    http://laid.delanover.com/debugging-a-keras-neural-network/
-
-    추가적으로 neural network 모델의 일반적인 디버깅 방식은 아래의 링크를 참조해 주시면 좋을 것 같습니다.
-    https://medium.com/machine-learning-world/how-to-debug-neural-networks-manual-dc2a200f10f2
-
-#### Question5. Colab에서 with tf.device('/gpu:0') 아래에 인덴트해서 넣으면 CPU가 아닌 GPU로 돌아가는 게 맞는지요? 
-
-    안녕하세요 :slightly_smiling_face: 좋은 질문 주셔서 감사합니다. 상단 메뉴의 런타임에서 런타임 유형을 꼭 GPU로 바꿔주셔야 GPU가 작동됩니다. 
-    아래 링크에서 참조해 보시면, GPU 설정 이전에는 with tf.device('/gpu:0)을 설정하더라도, 
-    GPU 장치가 관측되지 않습니다. (https://colab.research.google.com/notebooks/gpu.ipynb#scrollTo=t9ALbbpmY9rm)
-
-#### Question6. 딥러닝에서 레이어를 몇개로 하며 또 각 레이어마다 차원을 몇개로 해야하는지는 어떻게 정하는 겁니까?
+#### Question3. 딥러닝에서 레이어를 몇개로 하며 또 각 레이어마다 차원을 몇개로 해야하는지는 어떻게 정하는 겁니까?
 
     안녕하세요. 좋은 질문 주셔서 감사합니다. 딥러닝에서 레이어의 개수 혹은 차원의 개수에 대한 결정은 Overfitting Issues와 큰 관련이 있습니다. 
     Overfitting은 1. 모델이 너무 복잡하거나 2. 데이터가 너무 적거나 하는 문제로 인해서 발생할 수 있습니다.
@@ -100,29 +194,11 @@
     Cross Validation에 대한 설명은 아래 링크를 참조해 보시면 좋을것 같습니다. (https://www.youtube.com/watch?v=TIgfjmp-4BA)
     모델이 복잡할때 생길 수 있는 이슈에 대한 예제는 아래의 링크를 참조해 보시면 됩니다. (https://towardsdatascience.com/beginners-ask-how-many-hidden-layers-neurons-to-use-in-artificial-neural-networks-51466afa0d3e)
 
-#### Question7. !pip install -q matplotlib-venn 이 뭐하는건지는 알겠는데, -q는 뭘까요?
-
-    아래 링크에 따르면, -q는 설치 과정에 나타나는 메세지를 줄여주는 역할을 합니다.
-
-    -q, --quiet
-
-    Give less output. Option is additive, and can be used up to 3 times (corresponding to WARNING, ERROR, and
-    CRITICAL logging levels).
-
-    https://media.readthedocs.org/pdf/pip/latest/pip.pdf
-
-#### Question8. hyper parameter 최적화를 위한 설정
-
-    해당 방법은 Module3에서 관련하여 보다 자세히 다룰 예정입니다. (Learning Curves, Batch Normalization, Dropout and Regularization, Continuous Learning, Hyperparameter Search)
-
-#### Question9. Keras와 Google Colab을 사용하는데 가장 적절한 파이썬 버전은 무엇인가요?
-
-    이 부분은 선호의 문제일 수 있을 것 같습니다. 저는 Python2를 주로 쓰고있지만 (legacy code), 가능하면 Python3를 쓰고 싶습니다.
-
-#### Question10. AI로 뭔가를 학습 시킬 때 전처리를 할텐데 이런 타임시리즈의 데이타는 어떤식으로 전처리를 하나요? 이동평균선?, 볼린져밴드 등 사용하나요? (Work-in-Progress)
+#### Question4. AI로 뭔가를 학습 시킬 때 전처리를 할텐데 이런 타임시리즈의 데이타는 어떤식으로 전처리를 하나요? 이동평균선?, 볼린져밴드 등 사용하나요?
 
     좋은 질문 입니다. 얘기 주신 방법 (MA, 볼린저벤드)은 주로 Trend와 Cycle을 구분하기 위한 방법으로 보입니다. 
-    사실 두가지 방법에 대한 Practical하게 다루는 곳은 많이 봤지만, 학문적인 Support를 주로 보지는 못 한것 같습니다.
+    사실 이동평균법을 활용하여 Practical하게는 Noise가 있는 Time Series에서 Noise를 줄이기 위해 사용하는 경우도 자주 보지만, 
+    이에대한 학문적인 근거를 가지고 사용하는 경우는 주로 보지는 못 한것 같습니다.
 
     해당 방법과 유사한 방법으로, 주로 학계에서는 Trend와 Cycle을 구분하기 위한 방법으로 Hodrick Prescott Filter를 이용합니다.
     (원레는 Macro Economy에서 Expansion/Recession을 구분하기 위해 사용하던 방법론)
@@ -131,10 +207,36 @@
     (최근에 흥미롭게 읽었던 논문 중에서는 4차 방정식이 Hodrick Prescott Filter보다 좋으니까 쓰지 말라는 말도 있습니다. https://econweb.ucsd.edu/~jhamilto/hp.pdf)
     
     현재에는 Outcome 변수에 대해서만 설명 드리자면, Preprocessing으로 아래와 같은 과정들을 취하고 있습니다.
-    핵심은 데이터의 분포를 가능한 Normal Distribution으로 만들어 주려는 것 이고요, 그런 경우에 Significant Change를 잡아내는 방향으로 하고 있습니다.
+    제가 하고있는 Preprocessing에서의 핵심은 데이터의 분포를 가능한 Normal Distribution으로 만들어 주려는 것 이고요, 
+    그런 경우에 Significant Change를 잡아내는 방향으로 하고 있습니다. 
+    (이외에도 무수히 많은 방법이 가능할 것 같습니다.)
 
         1. Continuos Value에 대한 예측시에는 Log Return을 예측 값으로 사용 (그냥 Return의 분포는 Kurtosis가 너무 높음)
         3. Continuos Value에 대한 예측시 HP Filter 이후에 Cycle 파트에 대한 예측, Trend 파트에 대한 예측
         2. Discrete Value (Up/Down) 문제를 풀때는, Outcome 변수를 Significant Change를 상정하여 (1 std 이상 상승/횡보/하락)으로 구분
 
     위의 설명은 Outcome 변수에 대한 것 이지만, 예측에 사용되는 다른 변수들은 그 변수의 특징에 따라서 다른 Preprocessing 과정을 거치고 있습니다.
+
+## Colab
+#### Question1. Keras와 Google Colab을 사용하는데 가장 적절한 파이썬 버전은 무엇인가요?
+
+    이 부분은 선호의 문제일 수 있을 것 같습니다. 저는 Python2를 주로 쓰고있지만 (legacy code로 인해), 가능하면 Python3를 쓰고 싶습니다.
+
+#### Question2. Colab에서 with tf.device('/gpu:0') 아래에 인덴트해서 넣으면 CPU가 아닌 GPU로 돌아가는 게 맞는지요? 
+
+    안녕하세요 :slightly_smiling_face: 좋은 질문 주셔서 감사합니다. 상단 메뉴의 런타임에서 런타임 유형을 꼭 GPU로 바꿔주셔야 GPU가 작동됩니다. 
+    아래 링크에서 참조해 보시면, GPU 설정 이전에는 with tf.device('/gpu:0)을 설정하더라도, 
+    GPU 장치가 관측되지 않습니다. (https://colab.research.google.com/notebooks/gpu.ipynb#scrollTo=t9ALbbpmY9rm)
+
+## Python
+#### Question1. !pip install -q matplotlib-venn 이 뭐하는건지는 알겠는데, -q는 뭘까요?
+
+    아래 링크에 따르면, -q는 설치 과정에 나타나는 메세지를 줄여주는 역할을 합니다.
+
+    -q, --quiet
+
+    Give less output. Option is additive, and can be used up to 3 times (corresponding to WARNING, ERROR, and
+    CRITICAL logging levels).
+
+    (https://media.readthedocs.org/pdf/pip/latest/pip.pdf)
+

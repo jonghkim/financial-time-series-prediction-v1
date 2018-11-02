@@ -35,5 +35,8 @@
 
 - M2.7 Slack Discussion
 
+## Q&A
+- Module2. [Learning Tensorflow Keras API](../Q&A/Module2.md)
+
 ## References
 - [KAIST Summer Session 2018](https://sites.google.com/view/kaist-mis-session2018), 2018
