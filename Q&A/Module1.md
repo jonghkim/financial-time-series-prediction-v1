@@ -96,7 +96,7 @@
     
     아래의 자료의 그림 "Graphical illustration of bias and variance" 을 보시면, Low Bias에 대한 이해가 분명해 지실 것 같습니다.
     
-![bias_vs_variance](supplementary/bias_vs_variance.png)
+![bias_vs_variance](supplementary/bias_vs_variance.png){: .center}
 
     (http://scott.fortmann-roe.com/docs/BiasVariance.html)
 
@@ -119,7 +119,7 @@
 
     예를 들어, 2차원에서 아래와 같은 2진 분류 문제가 있다고 가정하면, 아래 3개의 신경망(모두 하나의 층만 있음)은 Node의 개수를 달리 했을 때의 결과를 보여 줍니다.
 
-![layer_sizes](supplementary/layer_sizes.jpeg)
+![layer_sizes](supplementary/layer_sizes.jpeg){: .center}
 
     위의 다이어그램에서 뉴런이 더 많은 네트워크는 더 복잡한 기능을 표현할 수 있지만, 이 결과는 blessing과 (더 복잡한 데이터를 분류하는 것을 배울 수 있기 때문에)과 Curse입니다 (훈련 데이터를 Overfitting 하기 쉽기 때문에). 
     복잡한 모형보다, 3개의 hidden neuron을 가진 모델이 전체 데이터를 큰 두가지 모양으로 구분하고 나머지 점들은 noise로 해석하는데, 더 나은 일반화를 한 모델일 수 있습니다.
