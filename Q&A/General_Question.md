@@ -42,43 +42,42 @@
     하지만, 주의하셔야 할점은 M1.2에서 다루었듯이, Theory 없이 (Causual Relationship) 잘 못된 Factor에 기반한 예측은 심각한 Bias를 만들어 낼 수도 있기 때문에 주의가 필요한 것 같습니다.
 
 #### Question3. Data 형태 (이미지, 동영상, 시계열 등)에 따른 Popular Architecture들을 알 수 있을까요? 
+- [For Computer Vision Task](computer_vision.md)
+    1. Classification: 
+    2. Object Detection
+    3. Instance Segmentation
+    4. Other Tasks
 
-    - [For Computer Vision Task](computer_vision.md)
-        1. Classification: 
-        2. Object Detection
-        3. Instance Segmentation
-        4. Other Tasks
+- [For Natural Language Processing Task](natural_language_processing.md)
+    1. Word Similarities
+    2. Text Classification
+    3. Neural Machine Translation
+    4. Chatbots / Dialog Agents
+    5. Question Answering
 
-    - [For Natural Language Processing Task](natural_language_processing.md)
-        1. Word Similarities
-        2. Text Classification
-        3. Neural Machine Translation
-        4. Chatbots / Dialog Agents
-        5. Question Answering
-
-    - [For Voice Related Task](voice.md)
-        1. Speech Recognition
-        2. Generation of Voice
-        3. Lip Reading
-        4. Lip Sync from Audio
+- [For Voice Related Task](voice.md)
+    1. Speech Recognition
+    2. Generation of Voice
+    3. Lip Reading
+    4. Lip Sync from Audio
     
-    - [Generative Adversarial Networks](docs/generative_adversarial_model.md)
-        1.
-        2.
-        3.
-        4.
+- [Generative Adversarial Networks](docs/generative_adversarial_model.md)
+    1.
+    2.
+    3.
+    4.
 
-    - [Reinforcement Learning](docs/reinforcement_learning.md)
-        1.
-        2.
-        3.
-        4.
+- [Reinforcement Learning](docs/reinforcement_learning.md)
+    1.
+    2.
+    3.
+    4.
 
-    #### References
-    - https://arxiv.org/pdf/1708.02709.pdf
-    - http://web.stanford.edu/class/cs224n/
-    - https://www.analyticsvidhya.com/blog/2017/08/10-advanced-deep-learning-architectures-data-scientists/
-    - https://blog.statsbot.co/deep-learning-achievements-4c563e034257
+#### References
+- https://arxiv.org/pdf/1708.02709.pdf
+- http://web.stanford.edu/class/cs224n/
+- https://www.analyticsvidhya.com/blog/2017/08/10-advanced-deep-learning-architectures-data-scientists/
+- https://blog.statsbot.co/deep-learning-achievements-4c563e034257
         
 # [Keras]
 #### Question1. 텐서플로우에서 모델 저장하면 checkpoint 파일등 여러개가 만들어지잖아요. 케라스에서는 .h 파일 하나만 생기는겁니까? 혹시 텐서플로우의 .pb 파일에 대응하는 건가요?
