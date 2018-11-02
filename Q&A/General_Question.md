@@ -43,7 +43,7 @@
 
 #### Question3. Data 형태 (이미지, 동영상, 시계열 등)에 따른 Popular Architecture들을 알 수 있을까요? 
 - [For Computer Vision Task](docs/computer_vision.md)
-    1. Classification: 
+    1. Classification
     2. Object Detection
     3. Instance Segmentation
     4. Other Tasks
