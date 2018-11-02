@@ -43,36 +43,36 @@
 
 #### Question3. Data 형태 (이미지, 동영상, 시계열 등)에 따른 Popular Architecture들을 알 수 있을까요? 
 
-1. For Computer Vision Task
+- For Computer Vision Task
 <img src="supplementary/visual_task.png" width="80%" align="center">
 
-- Classification: 
-    - GoogleNet: GoogleNet (or Inception Network) is a class of architecture designed by researchers at Google. GoogleNet was the winner of ImageNet 2014, where it proved to be a powerful model. In this architecture, along with going deeper (it contains 22 layers in comparison to VGG which had 19 layers), the researchers also made a novel approach called the Inception module. The final architecture contains multiple of these inception modules stacked one over the other.
+    - Classification: 
+        - GoogleNet: GoogleNet (or Inception Network) is a class of architecture designed by researchers at Google. GoogleNet was the winner of ImageNet 2014, where it proved to be a powerful model. In this architecture, along with going deeper (it contains 22 layers in comparison to VGG which had 19 layers), the researchers also made a novel approach called the Inception module. The final architecture contains multiple of these inception modules stacked one over the other.
 
-<img src="supplementary/googlenet.png" width="80%" align="center">
-<img src="supplementary/inceptionnet.png" width="80%" align="center">
+    <img src="supplementary/googlenet.png" width="80%" align="center">
+    <img src="supplementary/inceptionnet.png" width="80%" align="center">
 
-- Object Detection
-    - ResNeXt: ResNeXt is said to be the current state-of-the-art technique for object recognition. It builds upon the concepts of inception and resnet to bring about a new and improved architecture. 
+    - Object Detection
+        - ResNeXt: ResNeXt is said to be the current state-of-the-art technique for object recognition. It builds upon the concepts of inception and resnet to bring about a new and improved architecture. 
 
-<img src="supplementary/resnet.png" width="80%" align="center">
-<img src="supplementary/resnetxt.png" width="80%" align="center">
+<img src="supplementary/resnet.png" width="50%" align="center">
+<img src="supplementary/resnetxt.png" width="50%" align="center">
 
-    - YOLO (You Only Look Once): YOLO is the current state-of-the-art real time system built on deep learning for solving image detection problems. As seen in the below given image, it first divides the image into defined bounding boxes, and then runs a recognition algorithm in parallel for all of these boxes to identify which object class do they belong to. After identifying this classes, it goes on to merging these boxes intelligently to form an optimal bounding box around the objects.
+        - YOLO (You Only Look Once): YOLO is the current state-of-the-art real time system built on deep learning for solving image detection problems. As seen in the below given image, it first divides the image into defined bounding boxes, and then runs a recognition algorithm in parallel for all of these boxes to identify which object class do they belong to. After identifying this classes, it goes on to merging these boxes intelligently to form an optimal bounding box around the objects.
 
 <img src="supplementary/yolo.png" width="80%" align="center">
 
-- Instance Segmentation
-    - SegNet: SegNet is a deep learning architecture applied to solve image segmentation problem. It consists of sequence of processing layers (encoders) followed by a corresponding set of decoders for a pixelwise classification. 
+    - Instance Segmentation
+        - SegNet: SegNet is a deep learning architecture applied to solve image segmentation problem. It consists of sequence of processing layers (encoders) followed by a corresponding set of decoders for a pixelwise classification. 
 
 <img src="supplementary/segnet.png" width="80%" align="center">
 
-- Other Tasks
-    - Visual Reasoning (LSTM, CNN, RN Combinations)
-    - OCR: Google Maps and Street View (CNN, RNN Combinations)
-    - Teaching Machine to Draw (SketchRNN)
+    - Other Tasks
+        - Visual Reasoning (LSTM, CNN, RN Combinations)
+        - OCR: Google Maps and Street View (CNN, RNN Combinations)
+        - Teaching Machine to Draw (SketchRNN)
 
-2. For Natural Language Processing Task
+- For Natural Language Processing Task
     - Word Similarities
         - Word2Vec
 
@@ -92,7 +92,7 @@
     - Question Answering
         - 
 
-3. For Voice Related Task
+- For Voice Related Task
     - Speech Recognition
 
     - Generation of Voice
@@ -112,10 +112,10 @@
 
 <img src="supplementary/lipsync.png" width="80%" align="center">    
 
-4. Generative Adversarial Networks
+- Generative Adversarial Networks
     - 
 
-5. Reinforcement Learning
+- Reinforcement Learning
     - 
 
 
