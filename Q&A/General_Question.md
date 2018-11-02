@@ -1,5 +1,5 @@
 # General Q&A
-## Deep Learning
+# [Deep Learning]
 #### Question1. 머신러닝이 할수 있는 예측에 대하여 궁금합니다. 일부에서는 스포츠 승률이라던지 심지어는 복권당첨도 예측하던데요.
 
     머신 러닝은 짧은 시간 동안에 여러 분야에 극적인 영향을 끼치고 있습니다. 예측 할 수 있는 문제의 유형도 시간이 지나면서 Combinatorial하게 넓어지고 있는 것 같습니다. 
@@ -43,106 +43,44 @@
 
 #### Question3. Data 형태 (이미지, 동영상, 시계열 등)에 따른 Popular Architecture들을 알 수 있을까요? 
 
-- For Computer Vision Task
-<img src="supplementary/visual_task.png" width="80%" align="center">
+    - [For Computer Vision Task](computer_vision.md)
+        1. Classification: 
+        2. Object Detection
+        3. Instance Segmentation
+        4. Other Tasks
 
-    1. Classification: 
-        - GoogleNet
-        GoogleNet (or Inception Network) is a class of architecture designed by researchers at Google. 
-        GoogleNet was the winner of ImageNet 2014, where it proved to be a powerful model. 
-        In this architecture, along with going deeper (it contains 22 layers in comparison to VGG which had 19 layers), 
-        the researchers also made a novel approach called the Inception module. 
-        The final architecture contains multiple of these inception modules stacked one over the other.
+    - [For Natural Language Processing Task](natural_language_processing.md)
+        1. Word Similarities
+        2. Text Classification
+        3. Neural Machine Translation
+        4. Chatbots / Dialog Agents
+        5. Question Answering
 
-<img src="supplementary/googlenet.png" width="80%" align="center">
-<img src="supplementary/inceptionnet.png" width="80%" align="center">
-
-    2. Object Detection
-        - ResNeXt
-        ResNeXt is said to be the current state-of-the-art technique for object recognition. 
-        It builds upon the concepts of inception and resnet to bring about a new and improved architecture. 
-
-<img src="supplementary/resnet.png" width="50%" align="center">
-<img src="supplementary/resnetxt.png" width="50%" align="center">
-
-        - YOLO (You Only Look Once)
-        YOLO is the current state-of-the-art real time system built on deep learning for solving image detection problems. 
-        As seen in the below given image, it first divides the image into defined bounding boxes, 
-        and then runs a recognition algorithm in parallel for all of these boxes to identify which object class do they belong to. 
-        After identifying this classes, it goes on to merging these boxes intelligently to form an optimal bounding box around the objects.
-
-<img src="supplementary/yolo.png" width="80%" align="center">
-
-    3. Instance Segmentation
-        - SegNet
-        SegNet is a deep learning architecture applied to solve image segmentation problem. 
-        It consists of sequence of processing layers (encoders) followed by a corresponding set of decoders for a pixelwise classification. 
-
-<img src="supplementary/segnet.png" width="80%" align="center">
-
-    4. Other Tasks
-        - Visual Reasoning (LSTM, CNN, RN Combinations)
-        - OCR: Google Maps and Street View (CNN, RNN Combinations)
-        - Teaching Machine to Draw (SketchRNN)
-
-- For Natural Language Processing Task
-    1. Word Similarities
-        - Word2Vec
-
-        - Glove
-
-    2. Text Classification
-        - CNN + 
-
-    3. Neural Machine Translation
-        - Seq2Seq
-
-        - Transformer
-
-    4. Chatbots / Dialog Agents
-        - Memory Network
-
-    5. Question Answering
-        - 
-
-- For Voice Related Task
-    1. Speech Recognition
-
-    2. Generation of Voice
-        - WaveNet(A generative model for raw audio)
-        researchers made an autoregressive full-convolution WaveNet model based on previous approaches to image generation (PixelRNN and PixelCNN). 
-        The network was trained end-to-end: text for the input, audio for the output. 
-
-<img src="supplementary/wavenet.gif" width="80%" align="center">
-
-    3. Lip Reading
-        - “omnichannel” model (audio + video)
-        There are 100,000 sentences with audio and video in the dataset. Model: LSTM on audio, and CNN + LSTM on video. 
-        These two state vectors are fed to the final LSTM, which generates the result (characters).
-<img src="supplementary/lipreading.jpeg" width="80%" align="center">    
-<img src="supplementary/lipreading_example.gif" width="80%" align="center">    
-
-
-    4. Lip Sync from Audio
-        - Combination of models
-        1. RNN 2. Mouth Syntyhesis 3. Re-timing 4. Composite 
-
-<img src="supplementary/lipsync.png" width="80%" align="center">    
-
-- Generative Adversarial Networks
-    - 
-
-- Reinforcement Learning
-    - 
-
-
-#### References
-- https://arxiv.org/pdf/1708.02709.pdf
-- http://web.stanford.edu/class/cs224n/
-- https://www.analyticsvidhya.com/blog/2017/08/10-advanced-deep-learning-architectures-data-scientists/
-- https://blog.statsbot.co/deep-learning-achievements-4c563e034257
+    - [For Voice Related Task](voice.md)
+        1. Speech Recognition
+        2. Generation of Voice
+        3. Lip Reading
+        4. Lip Sync from Audio
     
-## Keras
+    - [Generative Adversarial Networks](docs/generative_adversarial_model.md)
+        1.
+        2.
+        3.
+        4.
+
+    - [Reinforcement Learning](docs/reinforcement_learning.md)
+        1.
+        2.
+        3.
+        4.
+
+    #### References
+    - https://arxiv.org/pdf/1708.02709.pdf
+    - http://web.stanford.edu/class/cs224n/
+    - https://www.analyticsvidhya.com/blog/2017/08/10-advanced-deep-learning-architectures-data-scientists/
+    - https://blog.statsbot.co/deep-learning-achievements-4c563e034257
+        
+# [Keras]
 #### Question1. 텐서플로우에서 모델 저장하면 checkpoint 파일등 여러개가 만들어지잖아요. 케라스에서는 .h 파일 하나만 생기는겁니까? 혹시 텐서플로우의 .pb 파일에 대응하는 건가요?
 
     Checkpointing 기능은 긴 시간 (days, weeks) 동안의 학습시, train과정에 문제가 있더라도 모든 학습 정보를 잃지 않도록하는데 필수적인 기능이여서, 장기적으로는 꼭 배워둘 필요가 있는 것 같습니다. 
@@ -164,12 +102,12 @@
     
     간략한 설명을 드리자면, 모델 학습 이후에, 보고자하는 Inner Layer의 Input과 Output을 이용햐여 새로운 함수를 만들어 주시면 됩니다.
 
-    ~~~
-    inp = model.layers[0].input
-    out = model.laters[0].output
+'''
+inp = model.layers[0].input
+out = model.laters[0].output
 
-    feature_function = K.function([inp], [out])
-    ~~~
+feature_function = K.function([inp], [out])
+'''
 
     해당 방법에 대한 구체적인 설명은 아래 링크를 참조바랍니다.
 
@@ -231,7 +169,7 @@
 
 #### Question6. input_shape는 언제 쓰는 것 인가요? (Work-in-Progress)
 
-## Data
+# [Data]
 #### Question1. Test, Train Set의 할당에 황금(?) 비율이 있는지요? 그리고 예를 들어 data가 충분하지 않을때 Train에 많이 할당하면 좋을텐데, 이런 경우를 위해서 할당량을 조절할 방법이 있나요?
 
     train / test split의 목적은 generalization error 를 최소화 하기 위함인데, 둘 사이의 샘플 개수 결정은 경쟁 관계에 있습니다. 
@@ -324,7 +262,7 @@
 
     위의 설명은 Outcome 변수에 대한 것 이지만, 예측에 사용되는 다른 변수들은 그 변수의 특징에 따라서 다른 Preprocessing 과정을 거치고 있습니다.
 
-## Colab
+# [Colab]
 #### Question1. Keras와 Google Colab을 사용하는데 가장 적절한 파이썬 버전은 무엇인가요?
 
     이 부분은 선호의 문제일 수 있을 것 같습니다. 저는 Python2를 주로 쓰고있지만 (legacy code로 인해), 가능하면 Python3를 쓰고 싶습니다.
@@ -335,7 +273,7 @@
     아래 링크에서 참조해 보시면, GPU 설정 이전에는 with tf.device('/gpu:0)을 설정하더라도, 
     GPU 장치가 관측되지 않습니다. (https://colab.research.google.com/notebooks/gpu.ipynb#scrollTo=t9ALbbpmY9rm)
 
-## Python
+# [Python]
 #### Question1. !pip install -q matplotlib-venn 이 뭐하는건지는 알겠는데, -q는 뭘까요?
 
     아래 링크에 따르면, -q는 설치 과정에 나타나는 메세지를 줄여주는 역할을 합니다.
