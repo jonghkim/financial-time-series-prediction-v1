@@ -101,9 +101,11 @@
     간략한 설명을 드리자면, 모델 학습 이후에, 보고자하는 Inner Layer의 Input과 Output을 이용햐여 새로운 함수를 만들어 주시면 됩니다.
 
 <pre><code>
+# get layers from the trained model
 inp = model.layers[0].input
-out = model.laters[0].output
+out = model.layers[0].output
 
+# make a function to see an inner layer result
 feature_function = K.function([inp], [out])
 </code></pre>
 
