@@ -10,7 +10,7 @@
 - M3.1 Simple RNN Model for Up/Down Prediction
     - [Video] [Balancing Recurrent Neural Network Sequence Data for Crypto Predicting RNN](https://pythonprogramming.net/balancing-rnn-data-deep-learning-python-tensorflow-keras/) (7min)
     - [Video] [Cryptocurrency-predicting RNN Model](https://pythonprogramming.net/crypto-rnn-model-deep-learning-python-tensorflow-keras/) (23min)
-    - [PPT] [Batch Normalization, Dropout for Time Series Prediction Model ]()
+    - [PPT] [Batch Normalization, Dropout for Time Series Prediction Model]()
     - [Hands-on-Labs] Simple RNN Model for Crypto Currency Prediction [[Code](https://colab.research.google.com/drive/1AzPfrMqrhUxgE8EN0WTPoJ39B5xIEx-a)]
 
 - M3.2 Simple RNN Model for Return Prediction
