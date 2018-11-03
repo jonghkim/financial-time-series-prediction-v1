@@ -122,45 +122,64 @@ feature_function = K.function([inp], [out])
     해당 방법은 Module3에서 관련하여 보다 자세히 다룰 예정입니다. 
     (Learning Curves, Batch Normalization, Dropout and Regularization, Continuous Learning, Hyperparameter Search)
 
-#### Question4. Keras Model Optimizer에서 Option (optimizer, loss, metrics) 항목에서, 각 종류별로 어떤 상황에 어떤 옵션을 사용해야 하나요? 그리고, Loss와 Accuracy 값은 어떻게 해석해야 하나요? (Work-in-Progress)
+#### Question4. Keras Model Optimizer에서 Option (optimizer, loss, metrics) 항목에서, 각 종류별로 어떤 상황에 어떤 옵션을 사용해야 하나요? 그리고, Loss와 Accuracy 값은 어떻게 해석해야 하나요?
 
     1. Learning Rate
-        cost function의 모양을 고려
-         
-        flat 할 경우?
+        cost function의 형태에 따라서 적절한 learning rate에 차이가 납니다. cost function이 Flat할 경우 학습의 속도가 느리기 때문에 learning rate를 상대적으로 크게하여 학습 속도를 빠르게 만들 수 있습니다.
 
-        너무 steep할 경우?
+        learning rate가 너무 작거나, 클 경우에 cost function에서는 아래와 같이 너무 느리게 학습하거나, overshooting 하는 문제점이 발생할 수 있습니다.
 
-        너무 작으면? 너무 크면?
-    
+<img src="../img/learning_rate_big_small.jpeg" width="100%" align="center">
+
+<img src="../img/learningrates.jpeg" width="100%" align="center">
+
     2. Optimizer
         1. Gradient Descent
-        2. Stochastic Gradient Descent
-        3. Mini Batch Gradient Descent
+        가장 간단한 Optimizer인 gradient descent는 loss function의 gradient의 반대 방향으로 반복하여 weight를 조정해 주면서 loss function을 최소화 하는 파라미터를 찾습니다.
 
-        SGD, Momentum, AdaGrad 등등
+        하지만, weight를 업데이트 하는 과정이, 모든 train 데이터를 이용해 loss를 측정한 뒤 (1 epoch), 평균을 이용하여 단 한번만 일어나기 때문에 slow converge의 문제점이 있습니다.
+
+        2. Stochastic Gradient Descent
+        이러한 문제를 해결하기 위해, Stochastic Gradient Descent에서는, 모든 train 데이터가 아닌 하나의 data point를 이용해 weight를 업데이트 하는 SGD 방식이 소개되었습니다.
+
+        하지만 해당 방식은 noise가 크며, 이로 인해 Local Minima에 빠지는 등의 문제점이 있을 수 있습니다.
+
+        3. Mini Batch Gradient Descent
+        이러한 문제를 해결하기 위해, 전체 train 데이터를 Mini Batch로 쪼개어, 각 Mini Batch의 Cost를 이용해 weight를 업데이트 해주는 방법이 도입되었습니다.
+
+        Practical하게는, 다양한 batch 사이즈에 대해서, 어떤 size에서 loss의 감소가 가장 빠른지 실험하여 batch size를 결정하기도 합니다.
+
+        일반적으로는 batch size가 너무 크면, 1번에서 업급한 문제와 마찬가지로 slow converge 문제가 있습니다.
+
+        이 외에도 다양한 SGD의 다양한 변형이 소개되었는데, Momentum, NAG, Adagrad etc. 핵심은 어떻게 자주 weight를 업데이트하면서도 noise를 줄일 수 있을지에 대한 문제를 다루고 있습니다.
+
+<img src="../img/sgd.gif" width="100%" align="center">
 
     3. Kernel Initialization
-        Very Sensitive, 
+        각 kernel의 초기 값을 어떻게 설정해줄지에 대해 여러 옵션이 있습니다. (zeros, uniform, normal, he_normal, lecun_uniform)
 
-        똑같은 설정이여도, 새로 돌리면 결과가 다를 수 있음
+        하지만, 꼭 한 초기화 방식이 항상 더 나은 결과를 보이는 것은 아니며, Very Sensitive하게 결과가 바뀌기도 합니다. 
+        똑같은 설정이여도, 새로 돌리면 결과가 다를 수 있기 떄문에, local minima에 빠질 경우 새로 돌려야 하는 경우도 있습니다.
 
-        zeros
-        uniform
-        normal
-        he_normal
-        lecun_uniform
-
-    4. loss
-        1. categorical~~
-
-    5. keras에서 performance를 평가하기 위한 방법
+    4. Keras Accuracy Metrics
     
-    https://machinelearningmastery.com/evaluate-performance-deep-learning-models-keras/
+        1. Mean Squared Error: mean_squared_error, MSE or mse
+        2. Mean Absolute Error: mean_absolute_error, MAE, mae
+        3. Mean Absolute Percentage Error: mean_absolute_percentage_error, MAPE, mape
+        4. Cosine Proximity: cosine_proximity, cosine
 
-    6. Accuracy의 종류
+    5. Keras Classification Metrics
+        
+        1. Binary Accuracy: binary_accuracy, acc
+        2. Categorical Accuracy: categorical_accuracy, acc
+        3. Sparse Categorical Accuracy: sparse_categorical_accuracy
+        4. Top k Categorical Accuracy: top_k_categorical_accuracy (requires you specify a k parameter)
+        5. Sparse Top k Categorical Accuracy: sparse_top_k_categorical_accuracy (requires you specify a k parameter)
 
-    https://machinelearningmastery.com/custom-metrics-deep-learning-keras-python/ 
+    References
+    - http://shuuki4.github.io/deep%20learning/2016/05/20/Gradient-Descent-Algorithm-Overview.html
+    - https://machinelearningmastery.com/custom-metrics-deep-learning-keras-python/
+    - http://shuuki4.github.io/deep%20learning/2016/05/20/Gradient-Descent-Algorithm-Overview.html
 
 #### Question5. keras와 다르게 텐서플로우에서 왜 변수초기화를 안하면 오류가 나는가요?
 
@@ -168,7 +187,7 @@ feature_function = K.function([inp], [out])
     반면에 keras, slim과 같은 high level api는 변수 초기화가 자동으로 되는 것 입니다. 
     Explicit initialization의 장점은 모델을 체크 포인트에서 다시로드 하는 경우에는 오히려, 계산적인 비용이 드는 initialization을 다시 실행하지 않는 이점이 있습니다. 
 
-#### Question6. Dense와, CNN, LSTM에서 input_shape는 어떻게 다른가요? (Work-in-Progress)
+#### Question6. Dense와, CNN, LSTM에서 input_shape는 어떻게 다른가요?
 
     LSTM에서는 input shape로 (timestep, feature)를 받습니다. CNN에서는 (height, width, color)를 입려으로 주었으며, 
 
