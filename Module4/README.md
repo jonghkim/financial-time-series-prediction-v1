@@ -7,8 +7,8 @@
 
 ## Modules
 - M4.1 Crypto Exchange Price Prediction using Limit Orderbook
-    - [Hands-on-Labs] Crypto Exchange Price Prediction using Limit Orderbook [[Code]()]
-    - [Assigment] Develop Your Own Time Series Prediction Model using Limit Orderbook
+    - [Hands-on-Labs] [Crypto Exchange Price Prediction using Limit Orderbook]() [[Code]()]
+    - [Assigment] Develop Your Own Time Series Prediction Model using Limit Orderbook [[Problem]()]
 
 - M4.2 Reinforcement Learning
 - M4.3 Reinforcement Learning
