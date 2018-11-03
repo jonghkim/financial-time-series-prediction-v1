@@ -187,23 +187,6 @@ feature_function = K.function([inp], [out])
     반면에 keras, slim과 같은 high level api는 변수 초기화가 자동으로 되는 것 입니다. 
     Explicit initialization의 장점은 모델을 체크 포인트에서 다시로드 하는 경우에는 오히려, 계산적인 비용이 드는 initialization을 다시 실행하지 않는 이점이 있습니다. 
 
-#### Question6. Dense와, CNN, LSTM에서 input_shape는 어떻게 다른가요?
-
-    LSTM에서는 input shape로 (timestep, feature)를 받습니다. CNN에서는 (height, width, color)를 입려으로 주었으며, 
-
-    Dense Layer에서는 (..., input_dim) 의 input_shape을 받습니다. 즉 Dense Layer에서는 (width, height)를 입력하면, 
-    마지막 axis인 height에만 dense가 적용이 됩니다 (각 width의 step에 대해서). 
-    따라서, MNIST 예에 대해서는 모든 pixel에 dense를 적용하기 위해, Flatten을 통해 input_dim을 28*28으로 만들어 주었습니다.
-
-#### Question7. cuDNNLSTM은 tensorflow.keras에서 activation "relu"같은게 필요하지 않나요?
-    
-    cuDNNLSTM에서는 default activation을 쓰고 있습니다. 
-    (keras의 경우는 cuDNNLSTM의 activation function은 hard sigmoid 입니다. tensorflow cudnnlstm 의 경우는 tanh로 되어 있습니다)
-
-#### Question8. LSTM모델 셀 내부 구성을 보면, sigmoid와 tanh이 들어가 있습니다. tensorflow.keras에서 activation='relu'로 설정하면 어디에서 동작하는 용도인가요? 
-
-    LSTM의 각 셀의 마지막 Ouput에 적용이 됩니다.
-
 # [Data]
 #### Question1. Test, Train Set의 할당에 황금(?) 비율이 있는지요? 그리고 예를 들어 data가 충분하지 않을때 Train에 많이 할당하면 좋을텐데, 이런 경우를 위해서 할당량을 조절할 방법이 있나요?
 
