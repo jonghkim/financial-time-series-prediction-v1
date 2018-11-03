@@ -56,7 +56,7 @@
 ## Module2.4 Recurrent Neural Networks
 #### Question1. Dense와, CNN, LSTM에서 input_shape는 어떻게 다른가요?
 
-    LSTM에서는 input shape로 (timestep, feature)를 받습니다. CNN에서는 (height, width, color)를 입려으로 주었으며, 
+    LSTM에서는 input shape로 (timestep, feature)를 받습니다. CNN에서는 (height, width, color)를 입력으로 주었으며, 
 
     Dense Layer에서는 (..., input_dim) 의 input_shape을 받습니다. 즉 Dense Layer에서는 (width, height)를 입력하면, 
     마지막 axis인 height에만 dense가 적용이 됩니다 (각 width의 step에 대해서). 
