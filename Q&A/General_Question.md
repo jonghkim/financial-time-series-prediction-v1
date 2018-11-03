@@ -129,9 +129,9 @@ feature_function = K.function([inp], [out])
 
         learning rate가 너무 작거나, 클 경우에 cost function에서는 아래와 같이 너무 느리게 학습하거나, overshooting 하는 문제점이 발생할 수 있습니다.
 
-<img src="img/learning_rate_big_small.jpeg" width="100%" align="center">
+<img src="img/learning_rate_big_small.jpeg" width="60%" align="center">
 
-<img src="img/learningrates.jpeg" width="100%" align="center">
+<img src="img/learningrates.jpeg" width="60%" align="center">
 
     2. Optimizer
         1. Gradient Descent
@@ -153,7 +153,7 @@ feature_function = K.function([inp], [out])
 
         이 외에도 다양한 SGD의 다양한 변형이 소개되었는데, Momentum, NAG, Adagrad etc. 핵심은 어떻게 자주 weight를 업데이트하면서도 noise를 줄일 수 있을지에 대한 문제를 다루고 있습니다.
 
-<img src="img/sgd.gif" width="100%" align="center">
+<img src="img/sgd.gif" width="60%" align="center">
 
     3. Kernel Initialization
         각 kernel의 초기 값을 어떻게 설정해줄지에 대해 여러 옵션이 있습니다. (zeros, uniform, normal, he_normal, lecun_uniform)
