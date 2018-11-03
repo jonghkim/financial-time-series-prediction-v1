@@ -10,12 +10,12 @@
 - M3.1 Simple RNN Model for Crypto Currency Prediction
     - [Video] [Balancing Recurrent Neural Network Sequence Data for Crypto Predicting RNN](https://pythonprogramming.net/balancing-rnn-data-deep-learning-python-tensorflow-keras/) (7min)
     - [Video] [Cryptocurrency-predicting RNN Model](https://pythonprogramming.net/crypto-rnn-model-deep-learning-python-tensorflow-keras/) (23min)
-    - [Hands-on-Labs] [Simple RNN Model for Crypto Currency Prediction]() [[Code]()]
+    - [Hands-on-Labs] Simple RNN Model for Crypto Currency Prediction [[Code](https://colab.research.google.com/drive/1AzPfrMqrhUxgE8EN0WTPoJ39B5xIEx-a)]
     - [Assignment] Develop Your Own Time Series Prediction Model [[Problem]()] [[Solution]()]
 
 - M3.2 Important Metrics for Financial Time Series Prediction
     - [Reading] [Correct Time Series Forecasting + Backtesting](https://medium.com/machine-learning-world/neural-networks-for-algorithmic-trading-1-2-correct-time-series-forecasting-backtesting-9776bfd9e589)
-    - [Hands-on-Labs] [Important Metrics for Financial Time Series Prediction]() [[Code]()]
+    - [Hands-on-Labs] [Important Metrics for Financial Time Series Prediction]() [[Code](https://colab.research.google.com/drive/1jyU24MqACCY6v09TG87FaXvU3ZpeorJf)]
     - [Assignment] Evaluating Your Own Time Series Prediction Model [[Problem]()] [[Solution]()]
 
 - M3.3 Improving Performance for Machine Learning
