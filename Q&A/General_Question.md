@@ -187,6 +187,10 @@ feature_function = K.function([inp], [out])
     반면에 keras, slim과 같은 high level api는 변수 초기화가 자동으로 되는 것 입니다. 
     Explicit initialization의 장점은 모델을 체크 포인트에서 다시로드 하는 경우에는 오히려, 계산적인 비용이 드는 initialization을 다시 실행하지 않는 이점이 있습니다. 
 
+#### Question6. model.evaluate(X_test, y_test, batch_size=600,verbose=False)의 결과는 Loss인 건가요? accuracy값을 뽑고 싶으면 어떻게 해야하나요..?
+
+    model.compile 시에 metric을 지정하여 주시면 지정된 metric을 계산하며, 그렇지 않을 경우 Loss가 계산됩니다.
+
 # [Data]
 #### Question1. Test, Train Set의 할당에 황금(?) 비율이 있는지요? 그리고 예를 들어 data가 충분하지 않을때 Train에 많이 할당하면 좋을텐데, 이런 경우를 위해서 할당량을 조절할 방법이 있나요?
 

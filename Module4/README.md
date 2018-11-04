@@ -6,17 +6,11 @@
 - Learn how to implement your own neural network models with cryptocurrency data which includes bid/ask volumes, minute level prices and trading volumes 
 
 ## Modules
-- M4.1 Crypto Exchange Price Prediction using Limit Orderbook
-    - [Reading] [Crypto Exchange Price Prediction using Limit Orderbook](https://drive.google.com/open?id=1U86rW0rL7ZMld4txXi40SEfACVJ0r3vZ)
-    - [Hands-on-Labs] Preprocessing for Limit Orderbook Data [[Code]()] [[Data]()]
-    
-- M4.2 Crypto Exchange Price Prediction using Limit Orderbook
-    - [Assigment] Develop Your Own Time Series Prediction Model using Limit Orderbook [[Problem]()] [[Solution]()]
-
-- M4.3 Reinforcement Learning
-- M4.4 Reinforcement Learning
-- M4.5 Summary
-
+- M4.1
+- M4.2 
+- M4.3 
+- M4.4 
+- M4.5 
 - M4.6 Assignment
 - M4.7 Slack Discussion
 
