@@ -1,4 +1,4 @@
-# Module1
+# Module2
 ## Module2.1 Convolutional Neural Networks
 #### Question1. 이미지 데이터를 왜 Reshape 해주는 건가요? CNN에서 Filter와 Image에 대한 파라미터는 어떻게 설정해야 하나요?
 
