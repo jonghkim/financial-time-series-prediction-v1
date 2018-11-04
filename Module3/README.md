@@ -12,11 +12,11 @@
     - [Video] [Cryptocurrency-predicting RNN Model](https://pythonprogramming.net/crypto-rnn-model-deep-learning-python-tensorflow-keras/) (23min)
     - [PPT] [Batch Normalization, Dropout for Time Series Prediction Model]()
     - [Hands-on-Labs] Simple RNN Model for Crypto Currency Prediction [[Code](https://colab.research.google.com/drive/1AzPfrMqrhUxgE8EN0WTPoJ39B5xIEx-a)]
-    - [Assignment] Develop Your Own Neural Network Model [[Problem]()] [[Solution]()]
+    - [Assignment] Develop Your Own Neural Network Model for Various Outcome [[Problem](https://colab.research.google.com/drive/1XO3bqzJXHe1R-cMcOsHWJ0GRu45ofB0K)] [[Solution](https://colab.research.google.com/drive/10T0p4FuaF4Bgph3dFRSYxbRMYkVPS9gN)]
 
 - M3.2 Important Metrics for Financial Time Series Prediction
     - [Reading] [Correct Time Series Forecasting + Backtesting](https://medium.com/machine-learning-world/neural-networks-for-algorithmic-trading-1-2-correct-time-series-forecasting-backtesting-9776bfd9e589)
-    - [Hands-on-Labs] [Important Metrics for Financial Time Series Prediction]() [[Code](https://colab.research.google.com/drive/1jyU24MqACCY6v09TG87FaXvU3ZpeorJf)]
+    - [Hands-on-Labs] [Important Metrics for Financial Time Series Prediction]() [[Code]()]
     - [Assignment] Measure Performance of Your Own Neural Network Model [[Problem]()] [[Solution]()]
 
 - M3.3 Improving Performance for Machine Learning
