@@ -16,7 +16,7 @@
 - M3.2 Important Metrics for Financial Time Series Prediction
     - [Reading] [Correct Time Series Forecasting + Backtesting](https://medium.com/machine-learning-world/neural-networks-for-algorithmic-trading-1-2-correct-time-series-forecasting-backtesting-9776bfd9e589)
     - [PPT] [Important Metrics for Financial Time Series Prediction](https://drive.google.com/open?id=1N5W1dg7h4dnF0fSZ9ohy_I5Of46Is3AD)
-    - [Assignment] Measure Performance of Your Own Neural Network Model [[Problem]()] [[Solution]()]
+    - [Assignment] Measure Performance of Your Own Neural Network Model [[Problem](https://colab.research.google.com/drive/1r0J7BBB0S7HmyVfFRLJD24XPC_bzg8ea)] [[Solution](https://colab.research.google.com/drive/1sJA328dcutKrVTe4WvFARVMFZ8zX6_Wl)]
 
 - M3.3 Improving Performance for Machine Learning
     - [Reading] [Volatility Forecasting and Custom Loss Functions](https://codeburst.io/neural-networks-for-algorithmic-trading-volatility-forecasting-and-custom-loss-functions-c030e316ea7e)
