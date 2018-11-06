@@ -191,6 +191,9 @@ feature_function = K.function([inp], [out])
 
     model.compile 시에 metric을 지정하여 주시면 지정된 metric을 계산하며, 그렇지 않을 경우 Loss가 계산됩니다.
 
+#### Question7. 모델저장시 구조 즉 그래프 메타정보 variable 정리가 필요합니다.
+    각 layer를 추가하실 때 name을 통해 저장해 주시면, get_layer(name) 을 통해 접근도 가능하며, 메타정보를 관리할 수 있습니다.
+
 # [Data]
 #### Question1. Test, Train Set의 할당에 황금(?) 비율이 있는지요? 그리고 예를 들어 data가 충분하지 않을때 Train에 많이 할당하면 좋을텐데, 이런 경우를 위해서 할당량을 조절할 방법이 있나요?
 

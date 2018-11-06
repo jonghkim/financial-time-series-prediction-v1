@@ -36,7 +36,12 @@
     이 외에도 하드웨어에 따라서 학습 속도면에서 커널 사이즈를 어떻게 선택할지도 관련이 있는 것으로 알고 있습니다. 
     따라서 Universal한 design이 있다기 보다는, 주어진 상황과 리소스에 맞춰서 선택해야하는 문제가 있는 것 같습니다.
 
-#### Question3. Cat 사진중에 140.jpg 파일은 아래 불러오는 과정중에서 Exception으로 처리가 됩니다. 해당 이미지는 왜 안불러지는건가요? (Work-in-Progress)
+#### Question3. ppt 15페이지부터 설명되는 1D convolution에 대해 좀 더 자세한 설명부탁드립니다. 갑자기 1D convolution에 대한 설명이 왜 나온건지 궁금합니다.
+    1D Convolution은 Single Feature의 Time Series Data에 적용하기 위해 사용되었습니다. 
+    아래의 동영상을 참조해 보시면 조금 더 쉽게 이해하실 수 있을 듯합니다. (https://www.youtube.com/watch?v=ulKbLD6BRJA)
+
+    보다 자세한 튜토리얼의 참조는 아래의 링크를 확인해 보시면 됩니다.
+    (https://blog.goodaudience.com/introduction-to-1d-convolutional-neural-networks-in-keras-for-time-sequences-3a7ff801a2cf?gi=a7760d2c4c1)
 
 ## Module2.2 Tensorboard on Google Colab
 
@@ -70,6 +75,20 @@
 #### Question3. LSTM모델 셀 내부 구성을 보면, sigmoid와 tanh이 들어가 있습니다. tensorflow.keras에서 activation='relu'로 설정하면 어디에서 동작하는 용도인가요? 
 
     LSTM의 각 셀의 마지막 Ouput에 적용이 됩니다.
+
+#### Question4. rnn계열의 비효율성으로 시계열 연구분야 또한 cnn으로 넘어가는 추세입니다만 주가예측 문제에 관해서는 어떻게 생각 하시나요?
+
+    상황이 계속해서 바뀌는 것 같습니다. 한 곳에서의 단점이 한해가 지나면, 보완된 방법론으로 해결되거나 새로운 모델로 인해 대채되는 경우도 많은 것 같습니다. 
+    cnn의 장점을 보자면 대표적으로 아래와 같은 특징이 있는데
+        - finding local patterns
+        - good for feature extraction
+        - faster (less parameter and parallelizable)
+    rnn 에서는 각각을 아래와 같은 방법으로 해결하며, 어떤 부분에서는 장점을 지니고 있기도 합니다.
+        - Local pattern 문제: attention이 해결
+        - sequential => parallel SRU 도입(https://arxiv.org/abs/1709.02755)
+        - Better remembering context
+        - Convolution Neural Networks have no dependence between last and current time step.
+    rnn의 local pattern에 대한 단점을 보안하기 위한 Compromise로 CNNs을 RNN에 “attached”하여서도 사용할 수 있습니다.
 
 ## Module2.5 Preprocessing for Cryptocurrency Data
    
