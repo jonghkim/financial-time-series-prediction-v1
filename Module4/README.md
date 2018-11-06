@@ -10,7 +10,7 @@
     - [Hands-on-Labs] [CNN Encoder + RNN Model]() [[Code]()]
     - [Assignment] CNN Encoder + RNN Time Series Prediction Model with Limit Orderbook Data [[Problem]()] [[Solution]()]
 - M4.2 Wavelet Transform to Denoise the Data
-    - [Hands-on-Labs] [Wavelet Transform for Denising]() [[Code]()]
+    - [Hands-on-Labs] [Wavelet Transform for Denoising]() [[Code]()]
     - [Assignment] Wavelet Transform to Denoise the Data [[Problem]()] [[Solution]()]
 - M4.3 Stacked Autoencoders to Extract Features from Data 
     - [Hands-on-Labs] [Autoencoders for Feature Extraction]() [[Code]()]
