@@ -6,10 +6,10 @@
 - Learn how to implement your own neural network models with cryptocurrency data which includes bid/ask volumes, minute level prices and trading volumes 
 
 ## Modules
-- M4.1 [Assignment] CNN Encoder + RNN Time Series Prediction Model with Limit Orderbook Data [[Problem]()] [[Data]()]
-- M4.2 [Assignment] Wavelet Transform to Denoise the Data [[Problem]()] [[Data]()]
-- M4.3 [Assignment] Stacked Autoencoders to Extract Features from Data [[Problem]()] [[Data]()]
-- M4.4 [Assignment] Final Neural Network Model [[Problem]()] [[Data]()]
+- M4.1 [Assignment] CNN Encoder + RNN Time Series Prediction Model with Limit Orderbook Data [[Problem]()] [[Solution]()]
+- M4.2 [Assignment] Wavelet Transform to Denoise the Data [[Problem]()] [[Solution]()]
+- M4.3 [Assignment] Stacked Autoencoders to Extract Features from Data [[Problem]()] [[Solution]()]
+- M4.4 [Assignment] Final Neural Network Model [[Problem]()] [[Solution]()]
 - M4.5 Summarizing
 - M4.6 Assignment
 - M4.7 Slack Discussion
