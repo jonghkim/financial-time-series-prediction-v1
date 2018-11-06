@@ -19,10 +19,10 @@
     - [Assignment] Measure Performance of Your Own Neural Network Model [[Problem](https://colab.research.google.com/drive/1r0J7BBB0S7HmyVfFRLJD24XPC_bzg8ea)] [[Solution](https://colab.research.google.com/drive/1sJA328dcutKrVTe4WvFARVMFZ8zX6_Wl)]
 
 - M3.3 Improving Performance for Machine Learning
-    - [Video] Understanding Wavelets, Part 1: What Are Wavelets https://youtu.be/QX1-xGVFqmw (5min)
-    - [Video] Understanding Wavelets, Part 2: Types of Wavelet Transforms https://youtu.be/F7Lg-nFYooU (5min)
-    - [Video] Understanding Wavelets, Part 3: An Example Application of the Discrete Wavelet Transform https://youtu.be/-OhibnAXBEM (5min)
-    - [Video] Understanding Wavelets, Part 4: An Example Application of Continuous Wavelet Transform https://youtu.be/GV34hKXDw_c (5min)
+    - [Video] [Understanding Wavelets, Part 1: What Are Wavelets](https://youtu.be/QX1-xGVFqmw) (5min)
+    - [Video] [Understanding Wavelets, Part 2: Types of Wavelet Transforms](https://youtu.be/F7Lg-nFYooU) (5min)
+    - [Video] [Understanding Wavelets, Part 3: An Example Application of the Discrete Wavelet Transform](https://youtu.be/-OhibnAXBEM) (5min)
+    - [Video] [Understanding Wavelets, Part 4: An Example Application of Continuous Wavelet Transform](https://youtu.be/GV34hKXDw_c) (5min)
     - [Hands-on-Labs] Wavelets in Python [[Code](https://colab.research.google.com/drive/1veaRKiVGaLQ_0iFQ7yF85E5SIdFUiBco)]
     - [Assignment] Improving Performance by Wavelets Denoising [[Problem](https://colab.research.google.com/drive/1OCNlwAr0cYDw3g2_XReg8UTPLeMqwior)] [[Solution](https://colab.research.google.com/drive/16hGhkA8ZfS6jNFE3RNG4EYcDS4BRASmH)]
 
