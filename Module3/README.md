@@ -27,9 +27,7 @@
     - [Assignment] Improving Performance by Wavelets Denoising [[Problem](https://colab.research.google.com/drive/1OCNlwAr0cYDw3g2_XReg8UTPLeMqwior)] [[Solution](https://colab.research.google.com/drive/16hGhkA8ZfS6jNFE3RNG4EYcDS4BRASmH)]
 
 - M3.4 Improving Performance for Machine Learning
-    - [Reading] [Hyperparameters Optimization](https://medium.com/machine-learning-world/neural-networks-for-algorithmic-trading-hyperparameters-optimization-cb2b4a29b8ee)
-    - [Hands-on-Labs] [Hyperparameter Search]() [[Code]()]
-    - [Assignment] Improving Performance of Time Series Prediction Model [[Problem]()] [[Solution]()]
+    - [Hands-on-Labs] [Hyperparameter tuning, Regularization and Optimization](https://drive.google.com/open?id=1YV__t4FruWkBkLeU5ECyK-AUiaCIivq0) [[Code](https://colab.research.google.com/drive/1T8hfFVuSUMohKNPYq9L1j2IQ_Ch5nyjL)]
 
 - M3.5 Crypto Exchange Price Prediction using Limit Orderbook
     - [Reading] [Crypto Exchange Price Prediction using Limit Orderbook](https://drive.google.com/open?id=1U86rW0rL7ZMld4txXi40SEfACVJ0r3vZ)
