@@ -34,3 +34,16 @@ This is a repository for the [[STUDYPIE] Predicting Financial Time Series using 
 - Module2. [Learning Tensorflow Keras API](Q&A/Module2.md)
 - Module3. [Implementing Time Series Prediction Models](Q&A/Module3.md)
 - Module4. [Implementing Time Series Prediction Models (More Comprehensive)](Q&A/Module4.md)
+
+## For Citation
+```
+@misc{jonghkim,
+  author = {Jongho Kim},
+  title = {financial-time-series-prediction-v1},
+  year = {2018},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/jonghkim/financial-time-series-prediction-v1}},
+}
+```
+
