@@ -8,7 +8,7 @@
 ## Modules
 - M4.1 Orderbook Data
     - [Hands-on-Labs] [Orderbook Data]() [[Code]()] [[Data]()]
-    - [Assignment] [FNN, CNN, RNN Prediction Model with Orderbook Data] [[Problem]()] [[Solution]()]
+    - [Assignment] FNN, CNN, RNN Prediction Model with Orderbook Data [[Problem]()] [[Solution]()]
     
 - M4.2 CNN Encoder + RNN Time Series Prediction Model with Limit Orderbook Data
     - [Hands-on-Labs] [CNN Encoder + RNN Model]() [[Code]()]
