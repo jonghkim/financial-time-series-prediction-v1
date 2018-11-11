@@ -7,6 +7,7 @@
 
 ## Modules
 - M4.1 Orderbook Data
+    - [Reading] [Read Section 3 Dataset Characteristics](https://drive.google.com/open?id=1U86rW0rL7ZMld4txXi40SEfACVJ0r3vZ)
     - [Hands-on-Labs] Orderbook Data Exploration [[Code](https://colab.research.google.com/drive/1eurWi1Mmw2ZuPh2KlHFG58emDoX-GHdg)] [[Data](https://drive.google.com/open?id=1_GXzTuyIopvkkOeCxHanVZKa0tKclD6F)]
     - [Assignment] Compare FNN, CNN, RNN Model with Orderbook Data [[Problem](https://colab.research.google.com/drive/1oPvZAIsS_NVd80o-iaxRMyJJa5MYrhEH)] [[Solution](https://colab.research.google.com/drive/1iRuwyBpW_Ce4QWDHw0GirMyMN5Dusn3X)]
     
