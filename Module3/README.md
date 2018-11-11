@@ -31,8 +31,6 @@
 
 - M3.5 Crypto Exchange Price Prediction using Limit Orderbook
     - [Reading] [Crypto Exchange Price Prediction using Limit Orderbook](https://drive.google.com/open?id=1U86rW0rL7ZMld4txXi40SEfACVJ0r3vZ)
-    - [Hands-on-Labs] Preprocessing for Limit Orderbook Data [[Code]()] [[Data]()]
-    - [Assignment] Extending Time Series Prediction Model for Limit Orderbook Data [[Problem]()] [[Data]()]
 
 - M3.6 [Assignment]()
 - M3.7 Slack Discussion
