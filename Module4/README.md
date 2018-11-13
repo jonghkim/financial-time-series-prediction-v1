@@ -19,11 +19,11 @@
 - M4.3 Stacked Autoencoders to Extract Features from Data
     - [Reading] [Gentle Introduction to the Keras Functional API](https://machinelearningmastery.com/keras-functional-api-deep-learning/)
     - [Hands-on-Labs] [Autoencoders for Feature Extraction](https://blog.keras.io/building-autoencoders-in-keras.html) [[Code](https://colab.research.google.com/drive/1OwcK9s5aRqBIw9vFWD6HmubJVwLG3GZz)]
-    - [Assignment] Stacked Autoencoders to Extract Features from Data [[Problem]()] [[Solution]()]
+    - [Assignment] Stacked Autoencoders to Extract Features from Data [[Problem](https://colab.research.google.com/drive/1W-r49D0F69WgAdyb3Vnif0Q4u-j8XANr)] [[Solution](https://colab.research.google.com/drive/1UO1GU3O9mSz9UexjLiNOOENQ_0s-b3SC)]
 
 - M4.4 Final Neural Network Model
     - [Reading] [A Deep Learning Framework for Financial Time Series using Stacked Autoencoders and Long-Short Term Memory](https://drive.google.com/open?id=19zYBAUV5at8RY43TvOUJj_4PdSRGZcQT)
-    - [Assignment] Final Neural Network Model [[Problem](https://colab.research.google.com/drive/1W-r49D0F69WgAdyb3Vnif0Q4u-j8XANr)] [[Solution](https://colab.research.google.com/drive/1UO1GU3O9mSz9UexjLiNOOENQ_0s-b3SC)]
+    - [Assignment] Final Neural Network Model [[Problem]()] [[Solution]()]
 
 - M4.5 Summary of Courses
     - [PPT] Summary of Courses
