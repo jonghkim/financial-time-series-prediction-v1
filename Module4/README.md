@@ -17,7 +17,7 @@
     - [Assignment] CNN Encoder + RNN Time Series Prediction Model with Limit Orderbook Data [[Problem](https://colab.research.google.com/drive/1AH56wjfso6eEcv6hWKJ86TMI_8N-t3pH)] [[Solution](https://colab.research.google.com/drive/1XJ18u6j_3i8MlXtnkszujwwx5d4RL9eQ)]
 
 - M4.3 Stacked Autoencoders to Extract Features from Data
-    - [Reading] [Gentle Introduction to the Keras Functional API](https://machinelearningmastery.com/keras-functional-api-deep-learning/)
+    - [Reading] [A Gentle Introduction to the Keras Functional API](https://machinelearningmastery.com/keras-functional-api-deep-learning/)
     - [Hands-on-Labs] [Autoencoders for Feature Extraction](https://blog.keras.io/building-autoencoders-in-keras.html) [[Code](https://colab.research.google.com/drive/1OwcK9s5aRqBIw9vFWD6HmubJVwLG3GZz)]
     - [Assignment] Stacked Autoencoders to Extract Features from Data [[Problem](https://colab.research.google.com/drive/1W-r49D0F69WgAdyb3Vnif0Q4u-j8XANr)] [[Solution](https://colab.research.google.com/drive/1UO1GU3O9mSz9UexjLiNOOENQ_0s-b3SC)]
 
