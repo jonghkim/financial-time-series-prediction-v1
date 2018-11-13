@@ -19,6 +19,7 @@
 - M4.3 Stacked Autoencoders to Extract Features from Data
     - [Hands-on-Labs] [Autoencoders for Feature Extraction]() [[Code]()]
     - [Assignment] Stacked Autoencoders to Extract Features from Data [[Problem]()] [[Solution]()]
+    - [Supplementary Reading] [A Deep Learning Framework for Financial Time Series using Stacked Autoencoders and Long-Short Term Memory](https://drive.google.com/open?id=19zYBAUV5at8RY43TvOUJj_4PdSRGZcQT)
 
 - M4.4 Final Neural Network Model
     - [Hands-on-Labs] Final Neural Network Model [[Code]()]
