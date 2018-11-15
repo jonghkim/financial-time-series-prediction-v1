@@ -23,10 +23,10 @@
 
 - M4.4 Final Neural Network Model
     - [Reading] [A Deep Learning Framework for Financial Time Series using Stacked Autoencoders and Long-Short Term Memory](https://drive.google.com/open?id=19zYBAUV5at8RY43TvOUJj_4PdSRGZcQT)
-    - [Assignment] Final Neural Network Model [[Problem]()] [[Solution]()]
 
-- M4.5 Summary of Courses
-    - [PPT] Summary of Courses
+- M4.5 Final Neural Network Model
+    - [Hands-on-Labs] Stacked Autoencoder LSTM [[Code](https://github.com/jonghkim/alpha-AI)]
+    - [Assignment] Write Your Own Neural Network Model for Financial Time Series Prediction [[Problem](https://colab.research.google.com/drive/12WhwLOMxnLH94qIa8B3SaneJpePJkZMF)]
 
 - M4.6 Assignment
 - M4.7 Slack Discussion
