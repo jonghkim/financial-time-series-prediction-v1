@@ -23,9 +23,9 @@
 
 - M4.4 Final Neural Network Model
     - [Reading] [A Deep Learning Framework for Financial Time Series using Stacked Autoencoders and Long-Short Term Memory](https://drive.google.com/open?id=19zYBAUV5at8RY43TvOUJj_4PdSRGZcQT)
-    - [Assignment] Final Neural Network Model [[Problem]()] [[Solution]()]
 
-- M4.5 Summary of Courses
+- M4.5 Final Neural Network Model
+    - [Assignment] Final Neural Network Model [[Problem]()] [[Solution]()]
     - [PPT] Summary of Courses
 
 - M4.6 Assignment
