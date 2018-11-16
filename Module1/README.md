@@ -5,11 +5,11 @@
 
 ## Modules
 - M1.1 Introduction
-    - [PPT] [Introduction to the Course](https://github.com/jonghkim/financial-time-series-prediction/blob/master/Module1/M1.1%20Introduction%20to%20the%20course.pdf)
+    - [PPT] [Introduction to the Course](https://drive.google.com/open?id=1D2C9v6RNqWwIQVmmQrEOCAhKF_Vlf0eW)
     - [Video] [Stock Price Prediction | AI in Finance](https://www.youtube.com/watch?v=7vunJlqLZok) (24 min)
 
 - M1.2 Machine Learning for Financial Time Series Prediction
-    - [PPT] [Machine Learning for Financial Time Series Prediction](https://github.com/jonghkim/financial-time-series-prediction/blob/master/Module1/M1.2%20Machine%20Learning%20for%20Financial%20Time%20Series%20Prediction.pdf)
+    - [PPT] [Machine Learning for Financial Time Series Prediction](https://drive.google.com/open?id=1KrHu6GDP8hP5wvhfjx0d5AHN_Bun05l-)
 
 - M1.3 Google Colab
     - [Video] [[Colab] 무료 GPU로 파이썬 노트북을 사용할 수 있는 google Drive Colaboratory 소개](https://youtu.be/XRBXMohjQos) (11min)
@@ -22,7 +22,7 @@
 
 - M1.5 Tensorflow Keras API on Google Colab
     - [Video] [Introduction to Deep Learning](https://pythonprogramming.net/introduction-deep-learning-python-tensorflow-keras/) (20min)
-    - [Hands-on-Labs] [Lab1_Keras](https://github.com/jonghkim/financial-time-series-prediction/blob/master/Module1/M1.5%20Lab1_Keras.pdf) [[Code](https://colab.research.google.com/drive/1U81gAePnC0oX9iq13dCzl-KOcJC3TcP5)]
+    - [Hands-on-Labs] [Lab1_Keras](https://drive.google.com/open?id=1AjVrk-q-_B3-ABuZO3Es3UD6fJjVu4XC) [[Code](https://colab.research.google.com/drive/1U81gAePnC0oX9iq13dCzl-KOcJC3TcP5)]
 
 - M1.6 [Assignments](https://docs.google.com/forms/d/e/1FAIpQLScccRwE4-4krpGQ1ZfCzIMCGA0AjgoBV3JHt4ZCO39eLvJlgg/viewform)
 
