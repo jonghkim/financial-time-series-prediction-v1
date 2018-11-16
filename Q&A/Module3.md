@@ -30,8 +30,8 @@
 ## Module3.3 Improving Performance for Machine Learning
 #### Question1. Wavelets에 대한 보다 자세한 설명이 필요합니다
     Wavelets는 denoising 방법의 일종으로 사용될 수 있으며, frequency와 time domain을 동시에 고려하는 모델입니다.
-    이러한 방법론에는 크게 1. 푸리에 변환 2. 웨이블랫 변환이 있습니다. 그런데 1번의 경우에는 sin function으로 원레의 signal을 모사하는데
-    local pattern을 찾기에 sin function이 적절하지 않습니다 (Local Pattern을 벗어난 부분에도 영향을 줌).
+    이러한 방법론에는 크게 1. 푸리에 변환 2. 웨이블랫 변환이 있습니다. 그런데 1번의 경우에는 local pattern을 찾기에 
+    sin function이 적절하지 않습니다 (Local Pattern을 벗어난 부분에도 영향을 줌).
     때문에 wavelets에서는 admissibility condition을 만족하는 basis들을 잡아서 local pattern들을 찾게 됩니다
     
 <img src="img/wavelets.jpg" width="100%" align="center">
