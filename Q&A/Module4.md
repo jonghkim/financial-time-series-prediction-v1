@@ -17,7 +17,7 @@
     저희의 orderbook 데이터 모양을 보시면 currecy-time level의 데이터임을 보실 수 있습니다.
     이를 분석에서 사용하려면, 해당 데이터를 currency-time level이 아니라, time level 만으로 바꿔줄 필요가 있고요
 
-<img src="img/balanced_1.jpg" width="100%" align="center">
+<img src="img/balanced_1.png" width="100%" align="center">
 
     예를 들어서 위 그림에서 보시면, 동일한 timestamp 2개가 연달아 있지만, currency가 다른 2개의 데이터 있음을 보실수 있습니다
     이와 같이 같은 timestamp 이더라도, currency가 다르면 다른 row에 있는 모양으로 되어 있고요 
@@ -26,7 +26,7 @@
     따라서 timestamp가 같으면 모두 같은 row로 와줘야하는데 지금은 그렇지 않은 상황입니다.
     따라서 이를 balanced panel code로 변형해준 결과는 아래와 같이, 같은 timestamp에 대해서는, 모든 currency가 같은 row에 오도록 변형해 주었습니다
 
-<img src="img/balanced_2.jpg" width="100%" align="center">
+<img src="img/balanced_2.png" width="100%" align="center">
 
 #### Question2. day1에 hands on lab에서 Serieal Correlation Test에서 컬럼명을 t-1과 t+1이던데,,, t-1과 t시점의 상관관계가 아닌 t-1과 t+1의 상관관계를 확인하는건가요?
     serial correlation에 대해서 질문을 주셨는데요, 해당 column은 t-1 t가 맞습니다. 
